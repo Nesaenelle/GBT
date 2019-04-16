@@ -3,15 +3,15 @@
 
 $(document).ready(function () {
 
-    $('.slick').slick({
+    $('.slider').slick({
         dots: false,
         arrows: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 6,
 
-        prevArrow: '.slick-prev',
-        nextArrow: '.slick-next',
+        // prevArrow: '.slick-prev',
+        // nextArrow: '.slick-next',
         responsive: [{
             breakpoint: 1280,
             settings: {
