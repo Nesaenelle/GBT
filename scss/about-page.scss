@@ -1,0 +1,36 @@
+.about-page {
+  text-align: center;
+  min-height: calc(100% - 44px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  > .container {
+    margin: initial;
+    width: 100%;
+    padding-top: 30px;
+  }
+  // .title {
+  //   color: #2d2a6a;
+  //   font-size: 375px;
+  //   font-weight: 600;
+  //   letter-spacing: -3.3px;
+  //   // width: 100%;
+  // }
+  // .descr {
+  //   font-size: 36px;
+  //   color: #383838;
+  //   // width: 100%;
+  //   margin-top: 30px;
+  // }
+  // .link {
+  //   margin-top: 30px;
+  //   font-size: 24px;
+  //   color: #383838;
+  //   // width: 100%;
+  //   a {
+  //     text-decoration: underline;
+  //     color: #db272f;
+  //   }
+  // }
+}

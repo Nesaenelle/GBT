@@ -32,4 +32,13 @@ $(document).ready(function () {
 
 
 
+    $('[data-modal]').on('click', (e) => {
+        let $target = $(e.currentTarget);
+        let id = $target.data('modal');
+        
+        
+    })
+
+
+
 })

@@ -6,6 +6,7 @@
 @import "fonts.scss";
 @import "home-page.scss";
 @import "not-found-page.scss";
+@import "about-page.scss";
 
 body {
   font-family: "Raleway regular", sans-serif;
@@ -13,8 +14,6 @@ body {
 
 .container {
   width: 100%;
-  // max-width: 1304px;
-  // max-width: 1254px;
   max-width: calc(1355px);
   min-width: 300px;
   margin: auto;

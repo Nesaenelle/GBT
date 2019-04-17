@@ -29,6 +29,11 @@ $(document).ready(function () {
             }
         }]
     });
+
+    $('[data-modal]').on('click', function (e) {
+        var $target = $(e.currentTarget);
+        var id = $target.data('modal');
+    });
 });
 
 },{}]},{},[1]);
