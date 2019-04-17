@@ -30,9 +30,46 @@ $(document).ready(function () {
         }]
     });
 
-    $('[data-modal]').on('click', function (e) {
+    $('#adolescence-form').on('submit', function (e) {
+        e.preventDefault();
+        console.log($(e.currentTarget).serialize());
+    });
+
+    $('.modal-language__item').on('click', function (e) {
+        $('.modal-language__item').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    });
+
+    function closeModal() {
+        var overlay = $('.modal-overlay');
+        $('.modal').removeClass('opened');
+        overlay.removeClass('opened');
+    }
+
+    function openModal(e) {
         var $target = $(e.currentTarget);
         var id = $target.data('modal');
+        var modal = $('[data-modal-id="' + id + '"]');
+        var overlay = $('.modal-overlay');
+
+        modal.addClass('opened');
+        overlay.addClass('opened');
+    }
+
+    $('[data-close-btn]').on('click', function () {
+        closeModal();
+    });
+
+    $('.modal-close').on('click', function () {
+        closeModal();
+    });
+
+    $('.modal-overlay').on('click', function () {
+        closeModal();
+    });
+
+    $('[data-modal]').on('click', function (e) {
+        openModal(e);
     });
 });
 

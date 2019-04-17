@@ -52,8 +52,8 @@
                     структуры позволяет оценить
                     значение
                     форм развития. </div>
-                <button class="btn btn-header" data-modal="modal-1"><span>Подробнее</span><img src="img/left-arrow.svg"
-                        alt=""></button>
+                <button class="btn btn-header" data-modal="modal-adolescence"><span>Подробнее</span><img
+                        src="img/left-arrow.svg" alt=""></button>
             </div>
         </div>
 
@@ -102,6 +102,33 @@
             <div class="copyright">2019 © GBT</div>
         </div>
     </footer>
+
+    <div class="modal-overlay"></div>
+    <div class="modal" data-modal-id="modal-adolescence">
+        <div class="modal-body">
+            <div class="modal-close">X</div>
+            <form id="adolescence-form">
+                <div class="top-block">
+                    <div class="title">Вы достигли совершеннолетия?</div>
+                    <div class="buttons">
+                        <button class="btn btn-modal-small" type="button" data-close-btn>НЕТ</button>
+                        <button class="btn btn-modal-small" type="submit">ДА</button>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" name="save" value="true">
+                        <div class="checkbox__icon"></div>
+                        Запомнить меня
+                    </label>
+                </div>
+                <div class="modal-language">
+                    <label class="modal-language__item active"><input type="radio" name="lang" checked value="urk"> UKR</label>
+                    <label class="modal-language__item"><input type="radio" name="lang" value="eng">ENG</label>
+                    <label class="modal-language__item"><input type="radio" name="lang" value="ru">RU</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

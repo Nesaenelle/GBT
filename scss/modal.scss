@@ -1,0 +1,136 @@
+.modal {
+    &[data-modal-id="modal-adolescence"] {
+        .modal-body {
+            width: 580px;
+            height: 360px;
+        }
+        form {
+            height: 100%;
+        }
+        .top-block {
+            padding: 46px 20px 20px 20px;
+            height: calc(100%- 51px);
+            text-align: center;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            .btn {
+                margin: 0 10px;
+            }
+        }
+        .title {
+            font-size: 38px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .modal-language {
+            display: flex;
+            justify-content: space-between;
+            height: 51px;
+            input {
+                display: none;
+            }
+            &__item {
+                font-size: 14px;
+                width: calc(100%/3 - 1px);
+                background: #c7c4d7;
+                color: #2c256b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-weight: 600;
+                &.active {
+                    background: #847fa8;
+                }
+            }
+        }
+    }
+    
+    &.opened {
+        .modal-body {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &-close {
+        position: absolute;
+        right: 17px;
+        top: 15px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+    &-overlay {
+        transition: 0.2s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(47, 39, 114, 0.9);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        &.opened {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.opened {
+        .modal-body {
+            display: block;
+        }
+    }
+
+    &-body {
+        transition: 0.2s;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+
+    .checkbox {
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        input {
+            display: none;
+            &:checked {
+                & + .checkbox__icon {
+                    &:after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        &__icon {
+            border: 1px solid #c4c4c4;
+            padding: 2px;
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+            &:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: block;
+                background: #db272f;
+                transition: 0.1s;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
