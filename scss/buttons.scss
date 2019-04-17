@@ -72,14 +72,15 @@
       font-weight: 300;
     }
   }
-  // &-tm {
-  //   border-radius: 20px;
-  //   background: #db272f;
-  //   padding: 12px 14px 10px 14px;
-  //   font-weight: 600;
-  //   border: none;
-  //   color: #fff;
-  //   width: 166px;
-  //   font-size: 14px;
-  // }
+  &-contacts {
+    width: 100%;
+    padding: 18px 20px;
+    background: #db272f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    font-weight: 600;
+  }
+
 }
