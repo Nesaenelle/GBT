@@ -89,7 +89,20 @@
       justify-content: center;
       align-items: center;
       img {
+        transition: 0.1s;
+      }
+      &:hover {
+        img {
+          transform: scale(1.08);
+        }
+      }
+
+      &:first-child img {
+        width: 21px;
+      }
+      &:last-child img {
         width: 30px;
+        margin-top: 1px;
       }
     }
   }
@@ -150,7 +163,7 @@
       font-size: 0;
       background: #db272f;
       &:after {
-        content: '';
+        content: "";
         background: url(../img/left-arrow.svg) no-repeat;
         width: 17px;
         display: block;
@@ -166,7 +179,7 @@
       font-size: 0;
       background: #db272f;
       &:after {
-        content: '';
+        content: "";
         background: url(../img/left-arrow.svg) no-repeat;
         width: 17px;
         display: block;
