@@ -4,6 +4,7 @@
   align-items: center;
   .top-panel {
     background: url(../img/distblue.png);
+    padding: 55px 0 58px;
   }
   .bottom-panel {
     margin-top: 0;
@@ -14,50 +15,58 @@
     display: flex;
     background: #f4f4fd;
     &__image {
-      width: 60%;
+      width: calc(66% + 5px);
       img {
         width: 100%;
         object-fit: cover;
-        height: 730px;
+        height: 873px;
         display: block;
       }
     }
     &__info {
-      width: 40%;
+      width: calc(34% - 5px);
       display: flex;
       align-content: center;
       flex-wrap: wrap;
+      padding-bottom: 30px;
       &-buttons {
         width: 100%;
         .btn {
-          margin-right: 20px;
+          margin-right: 7px;
         }
       }
       &-title {
         text-transform: uppercase;
         font-weight: 600;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 58px;
         margin-bottom: 10px;
+         & ~ .map__info-title{
+           margin-top: 51px;
+         }
       }
       &-text {
         width: 100%;
         max-width: 420px;
+        line-height: 1.5em;
       }
       ul {
         width: 100%;
+        margin-top: 2px;
         li {
           position: relative;
-          margin-bottom: 10px;
+          margin-bottom: 24px;
           display: flex;
           align-items: flex-start;
           width: 400px;
+          line-height: 1.5em;
           &:before {
             content: '';
             background: #2c256b;
-            width: 15px;
-            height: 15px;
+            width: 11px;
+            height: 11px;
             margin-right: 20px;
+            margin-top: 5px;
             display: block;
           }
         }
@@ -67,7 +76,8 @@
   .text-block {
     background: #2d2a6a;
     width: 100%;
-    color: #fff;
-    padding: 50px 0;
+    color: #bcbbcb;
+    padding: 57px 0 50px 0;
+    line-height: 1.5em;
   }
 }
