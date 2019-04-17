@@ -81,7 +81,21 @@
     }
     &__image {
       width: 50%;
+      position: relative;
+      font-size: 0;
+      z-index: 1;
+      &:after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        border: 5px solid #e5e5ed;
+      }
       img {
+        display: block;
         width: 100%;
         max-width: 580px;
         height: 304px;
@@ -90,6 +104,10 @@
     }
     &__text {
       width: 50%;
+      padding: 0 10px;
+      p + p {
+        margin-top: 10px;
+      }
     }
   }
 
@@ -136,6 +154,9 @@
       font-size: 48px;
       font-weight: 300;
       letter-spacing: 1px;
+    }
+    &-visia {
+      margin: 40px 0 40px;
     }
     &-values {
       margin: 40px 0 40px;
