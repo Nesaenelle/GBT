@@ -1,0 +1,181 @@
+.career-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .top-panel {
+    background: url(../img/careerblue.png);
+    padding: 46px 0 47px;
+  }
+  .bottom-panel {
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2e2d2d;
+    width: 100%;
+  }
+
+  .vacancies {
+    width: 100%;
+    background: #f4f4fd;
+    padding-bottom: 85px;
+    .title {
+      margin: 64px 0 36px;
+    }
+    &__list {
+      height: 300px;
+      position: relative;
+      &:after {
+        content: "";
+        height: 60px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: rgba(226, 226, 226, 0);
+        background: -moz-linear-gradient(top, rgba(226, 226, 226, 0) 0%, rgba(244, 244, 253, 1) 100%);
+        background: -webkit-gradient(
+          left top,
+          left bottom,
+          color-stop(0%, rgba(226, 226, 226, 0)),
+          color-stop(100%, rgba(244, 244, 253, 1))
+        );
+        background: -webkit-linear-gradient(top, rgba(226, 226, 226, 0) 0%, rgba(244, 244, 253, 1) 100%);
+        background: -o-linear-gradient(top, rgba(226, 226, 226, 0) 0%, rgba(244, 244, 253, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(226, 226, 226, 0) 0%, rgba(244, 244, 253, 1) 100%);
+        background: linear-gradient(to bottom, rgba(226, 226, 226, 0) 0%, rgba(244, 244, 253, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#f4f4fd', GradientType=0 );
+      }
+      .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #2a206d;
+        width: 2px;
+      }
+      .mCSB_scrollTools .mCSB_draggerRail {
+        background: #9e9bbe;
+        width: 1px;
+      }
+      &_item {
+        margin-bottom: 37px;
+        &--title {
+          color: #2c256b;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        &--text {
+          padding-right: 80px;
+          font-size: 14px;
+          color: #222222;
+          margin-top: 15px;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+
+  .career {
+    width: 100%;
+    .title {
+      margin: 62px 0 19px;
+    }
+    &__text {
+      text-align: center;
+      font-size: 14px;
+      padding: 0 100px;
+      line-height: 1.6em;
+      color: #626262;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      margin-top: 34px;
+      &_item {
+        width: calc(100% / 3);
+        &:nth-child(2) {
+          .career__list_item--image {
+            img {
+              width: 60px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .career__list_item--image {
+            img {
+              width: 60px;
+              margin-top: -10px;
+            }
+          }
+        }
+        &--image {
+          width: 153px;
+          height: 153px;
+          border-radius: 100%;
+          background: #2c256b;
+          margin: auto;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 80px;
+          }
+          &:after {
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid #7e7aa4;
+            border-radius: 100%;
+            width: 73%;
+            height: 73%;
+            position: absolute;
+          }
+        }
+        &--title {
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: center;
+          color: #2e2d2d;
+          margin-top: 24px;
+        }
+        &--text {
+          margin-top: 10px;
+          font-size: 14px;
+          text-align: center;
+          padding: 0 7px;
+          color: #797979;
+          line-height: 1.75em;
+        }
+      }
+    }
+  }
+
+  .application {
+    width: 100%;
+    background: url(../img/career-bg.png) no-repeat;
+    background-size: cover;
+    padding: 64px 0 71px 0;
+    margin-top: 56px;
+    &__title {
+      text-align: center;
+      color: #fff;
+      font-size: 36px;
+      width: 520px;
+      margin: auto;
+      text-transform: uppercase;
+    }
+    .btn {
+      display: block;
+      margin: 24px auto 0;
+      width: 230px;
+      padding: 15px 14px 13px;
+    }
+  }
+}

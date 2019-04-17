@@ -13,7 +13,7 @@ header {
   .header-shadow {
     width: 100%;
     top: 113px;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     height: 10px;
     box-shadow: 0 0 5px -2px #000;
