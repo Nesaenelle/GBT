@@ -24,16 +24,16 @@
       padding: 255px 54px 0;
     }
     &__title {
-      font-size: 70px;
+      font-size: 72px;
       font-weight: 600;
       margin-top: 14px;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.1px;
       line-height: 1em;
       span {
         font-size: 46px;
         letter-spacing: 1px;
         position: relative;
-        margin-top: 13px;
+        margin-top: 9px;
         display: block;
         font-weight: 300;
         &:after {
@@ -50,13 +50,14 @@
       font-size: 36px;
       display: flex;
       align-items: flex-end;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.4px;
       img {
-        margin-right: 0;
-        width: 40px;
-        height: 100px;
+        margin-right: 2px;
+        width: 36px;
+        height: 94px;
         display: block;
-        letter-spacing: 1px;
+        letter-spacing: 0.4px;
+        margin-bottom: 6px;
       }
     }
     &__text {
@@ -71,8 +72,8 @@
   .socials {
     position: absolute;
     right: 0;
-    top: 6px;
-    bottom: 0;
+    top: 0px;
+    bottom: 13px;
     margin: auto;
     display: flex;
     height: 118px;
@@ -84,7 +85,12 @@
       width: 49px;
       height: 49px;
       background: #fff;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -125,12 +131,14 @@
       bottom: 0;
       cursor: pointer;
       outline: none;
-      transition: 0.2s;
+      transition: 0.1s;
       bottom: 34px;
       top: 0;
       margin: auto;
+      display: flex;
+      justify-content: center;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
 
@@ -141,6 +149,13 @@
       left: -34px;
       font-size: 0;
       background: #db272f;
+      &:after {
+        content: '';
+        background: url(../img/left-arrow.svg) no-repeat;
+        width: 17px;
+        display: block;
+        height: 17px;
+      }
     }
 
     .slick-next.slick-arrow {
@@ -150,6 +165,14 @@
       right: -34px;
       font-size: 0;
       background: #db272f;
+      &:after {
+        content: '';
+        background: url(../img/left-arrow.svg) no-repeat;
+        width: 17px;
+        display: block;
+        height: 17px;
+        transform: rotate(180deg);
+      }
     }
   }
 }
