@@ -22,9 +22,10 @@
     background: url(../img/abcompanysky.png) no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
+    padding: 103px 0 100px;
+    margin-top: 42px;
     .container {
-      padding: 0 120px;
+      padding: 0 136px;
     }
     &__title {
       color: #fff;
@@ -39,15 +40,16 @@
     &__text {
       color: #fff;
       text-align: center;
-      padding: 50px;
+      padding: 70px 100px;
       border: 8px solid rgba(255, 255, 255, 0.3);
       border-top: none;
       position: relative;
       font-style: italic;
+      font-size: 18px;
       &:before {
         content: "";
         left: 0;
-        width: 40%;
+        width: 37%;
         height: 8px;
         display: block;
         top: 0;
@@ -57,7 +59,7 @@
       &:after {
         content: "";
         right: 0;
-        width: 40%;
+        width: 37%;
         height: 8px;
         display: block;
         top: 0;
@@ -65,7 +67,7 @@
         background: rgba(255, 255, 255, 0.3);
       }
       p + p {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   }
