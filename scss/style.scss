@@ -8,6 +8,7 @@
 @import "home-page.scss";
 @import "not-found-page.scss";
 @import "about-page.scss";
+@import "distribution-page.scss";
 
 body {
   font-family: "Raleway regular", sans-serif;
@@ -33,6 +34,9 @@ main {
 .top-panel {
   width: 100%;
   padding: 47px 0 46px 0;
+  background-size: cover;
+  align-self: flex-start;
+  text-align: left;
   .container {
   }
   .breadcrumbs {
@@ -84,6 +88,7 @@ main {
   width: 100%;
   margin-top: 20px;
   padding: 15px 0;
+  align-self: flex-end;
   .container {
     max-width: calc(1355px);
     display: flex;
