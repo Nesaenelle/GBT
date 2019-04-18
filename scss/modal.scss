@@ -84,10 +84,15 @@
             position: relative;
             margin: 0px 0 42px 0;
             cursor: pointer;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             font-size: 18px;
             span {
                 text-decoration: underline;
+            }
+            img {
+                width: 20px;
+                margin-right: 11px;
             }
             input {
                 width: 0.1px;
