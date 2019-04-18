@@ -1,31 +1,31 @@
 function closeModal() {
-    let overlay = $('.modal-overlay');
+    var overlay = $('.modal-overlay');
     $('.modal').removeClass('opened');
     overlay.removeClass('opened');
 }
 
 function openModal(e) {
-    let $target = $(e.currentTarget);
-    let id = $target.data('modal');
-    let modal = $(`[data-modal-id="${id}"]`);
-    let overlay = $('.modal-overlay');
+    var $target = $(e.currentTarget);
+    var id = $target.data('modal');
+    var modal = $(`[data-modal-id="${id}"]`);
+    var overlay = $('.modal-overlay');
 
     modal.addClass('opened');
     overlay.addClass('opened');
 }
 
-$('[data-close-btn]').on('click', () => {
+$('[data-close-btn]').on('click', function () {
     closeModal();
 });
 
-$('.modal-close').on('click', () => {
+$('.modal-close').on('click', function () {
     closeModal();
 });
 
-$('.modal-overlay').on('click', () => {
+$('.modal-overlay').on('click', function () {
     closeModal();
 });
 
-$('[data-modal]').on('click', (e) => {
+$('[data-modal]').on('click', function (e) {
     openModal(e);
 });

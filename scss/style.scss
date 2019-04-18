@@ -256,3 +256,49 @@ main {
     visibility: visible;
   }
 }
+
+
+@keyframes slideinRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+@keyframes slideinLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+
+@keyframes slideinDiagonal {
+  from {
+      transform: translate(-200%, -200%);
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  to {
+      transform: translate(0, 0);
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+
