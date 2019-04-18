@@ -160,7 +160,7 @@
                     Хотите стать частью
                     GLOBAL BEVERAGE TRADE?
                 </div>
-                <button class="btn btn-subscribe">Отправить заявку</button>
+                <button class="btn btn-subscribe" data-modal="modal-application">Отправить заявку</button>
             </div>
         </div>
 
@@ -183,7 +183,7 @@
                 </div>
                 <form class="form">
                     <div class="form-title">Хотите быть в курсе новостей?</div>
-                    <input type="text" placeholder="Введите ваш Email">
+                    <input type="text" placeholder="Введите ваш Email" required>
                     <button class="btn btn-subscribe">Подписаться</button>
                 </form>
             </div>
@@ -198,9 +198,29 @@
         </div>
     </footer>
 
+
+    <div class="modal-overlay"></div>
+    <div class="modal" data-modal-id="modal-application">
+        <div class="modal-body">
+            <div class="modal-close">X</div>
+            <form class="application-form">
+                <div class="title">Заполните форму ниже</div>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш E-mail" required>
+                <textarea name="comment" placeholder="Комментарий" required></textarea>
+                <label class="file-upload"><img src="" alt="">
+                    <span>Прикрепить файл</span>
+                    <input type="file" required>
+                </label>
+                <button class="btn btn-contacts">Отправить нам</button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="src/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="src/modal.js"></script>
     <script>
         $(".m-scrollbar").mCustomScrollbar();
     </script>

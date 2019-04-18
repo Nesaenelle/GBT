@@ -52,6 +52,52 @@
             }
         }
     }
+
+    &[data-modal-id="modal-application"] {
+        .modal-body {
+            width: 675px;
+            height: 640px;
+        }
+
+        .application-form {
+            width: 100%;
+            padding: 50px 45px 20px 45px;
+            input, textarea{
+                margin-bottom: 25px;
+                border-color: #e8e8e8;
+            }
+        }
+        .title {
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        .file-upload {
+            position: relative;
+            margin: 0px 0 50px 0;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 18px;
+            span {
+                text-decoration: underline;
+            }
+            input {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                display: block;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
     
     &.opened {
         .modal-body {

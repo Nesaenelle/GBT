@@ -80,7 +80,7 @@ function reload() {
 
 function watch() {
     style();
-    js();
+    // js();
     reload();
     browserSync.init({
         server: {
@@ -91,7 +91,7 @@ function watch() {
 
     gulp.watch(paths.styles.watch, style);
     
-    gulp.watch(paths.js.src, js);
+    // gulp.watch(paths.js.src, js);
     // gulp.watch(paths.vue.src, vue);
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website

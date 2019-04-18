@@ -31,47 +31,7 @@
     }
   }
 
-  .form {
-    width: 429px;
-    input,
-    textarea {
-      width: 100%;
-      background: none;
-      border: 1px solid #d5d3e1;
-      padding: 17px 14px 17px 20px;
-      outline: none;
-      font-size: 16px;
-      margin-right: 10px;
-      font-family: "Raleway regular", sans-serif;
-      margin-right: 23px;
-      margin-bottom: 19px;
-      resize: none;
-      &::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #a9a8ad;
-      }
-      &::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #a9a8ad;
-      }
-      &:-ms-input-placeholder {
-        /* IE 10+ */
-        color: #a9a8ad;
-      }
-      &:-moz-placeholder {
-        /* Firefox 18- */
-        color: #a9a8ad;
-      }
-    }
-    input:last-of-type {
-      margin-bottom: 12px;
-    }
-    textarea {
-      padding-top: 25px;
-      height: 145px;
-      margin-bottom: 22px;
-    }
-  }
+
 
   .map {
     width: calc(100% - 449px);

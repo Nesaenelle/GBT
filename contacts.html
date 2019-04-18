@@ -71,11 +71,11 @@
         <div class="container">
             <div class="title">Свяжитесь с нами</div>
             <div class="wrapper">
-                <form class="form">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="email" name="email" placeholder="Ваш E-mail">
-                    <input type="text" name="phone" placeholder="Ваш телефон">
-                    <textarea name="comment" placeholder="Комментарий"></textarea>
+                <form class="application-form">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш E-mail" required>
+                    <input type="text" name="phone" placeholder="Ваш телефон" required>
+                    <textarea name="comment" placeholder="Комментарий" required></textarea>
                     <button class="btn btn-contacts">Отправить нам</button>
                 </form>
                 <div class="map" id="map"></div>
@@ -108,7 +108,7 @@
                 </div>
                 <form class="form">
                     <div class="form-title">Хотите быть в курсе новостей?</div>
-                    <input type="text" placeholder="Введите ваш Email">
+                    <input type="text" placeholder="Введите ваш Email" required>
                     <button class="btn btn-subscribe">Подписаться</button>
                 </form>
             </div>
@@ -125,7 +125,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlBb2IIdB1ipotVn5R7TMYY2llHXs_-yI&callback=initMap" async defer></script>
 
     <script>
         var map;
@@ -133,7 +133,10 @@
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 50.4495, lng: 30.4256 },
                 zoom: 17,
-                disableDefaultUI: true
+                disableDefaultUI: true,
+                scaleControl: false,
+                navigationControl: false,
+                draggable: false
             });
 
             var marker = new google.maps.Marker({
