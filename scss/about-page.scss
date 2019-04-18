@@ -260,6 +260,27 @@
           right: -55px;
         }
       }
+      &:nth-child(1){
+        .about-list__item--image {
+          img {
+            width: 30px;
+          }
+        }
+      }
+      &:nth-child(2){
+        .about-list__item--image {
+          img {
+            margin-left: 5px;
+          }
+        }
+      }
+       &:nth-child(3){
+        .about-list__item--image {
+          img {
+            width: 76px;
+          }
+        }
+      }
       &--title {
         font-weight: 600;
         color: #2e2d2d;
@@ -276,8 +297,9 @@
         background: #2c256b;
         display: flex;
         justify-content: center;
+        align-items: center;
         img {
-          width: 50px;
+          width: 65px;
         }
         @media screen and (max-width: 1280px) {
           top: 0;
