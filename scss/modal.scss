@@ -65,6 +65,12 @@
             input, textarea{
                 margin-bottom: 25px;
                 border-color: #e8e8e8;
+                font-size: 18px;
+                padding: 15px 14px 17px 20px;
+            }
+            textarea {
+                padding: 25px 14px 17px 20px;
+                margin-bottom: 20px;
             }
         }
         .title {
@@ -72,11 +78,11 @@
             text-transform: uppercase;
             text-align: center;
             font-weight: 600;
-            margin-bottom: 50px;
+            margin-bottom: 55px;
         }
         .file-upload {
             position: relative;
-            margin: 0px 0 50px 0;
+            margin: 0px 0 42px 0;
             cursor: pointer;
             display: inline-block;
             font-size: 18px;

@@ -102,12 +102,13 @@ header {
           position: absolute;
           flex-wrap: wrap;
           left: 30px;
-          margin-top: 1px;
+          margin-top: 0px;
           visibility: hidden;
           opacity: 0;
           width: 150%;
           padding: 5px 20px;
           transition: 0.2s;
+          box-shadow: 0 4px 10px -5px #000;
           li {
             &:first-child {
               border-bottom: 1px solid #e4e4ec;
