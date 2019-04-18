@@ -3,25 +3,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 0;
+  height: calc(100% - 44px);
   .header-image {
     width: 54%;
     background: url(../img/main-header-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 848px;
-    // min-height: calc(100% - 200px);
+    height: calc(100% - 150px - 44px);
   }
 
   .header-description {
     width: 46%;
     color: #fff;
     background: #2c256b;
-    // display: flex;
-    // align-content: center;
-    // flex-wrap: wrap;
-    height: 848px;
+    height: calc(100% - 150px - 44px);
+    display: flex;
+    align-items: center;
     .container {
-      padding: 255px 54px 0;
+      padding: 100px 54px 0;
     }
     &__title {
       font-size: 72px;
@@ -174,6 +173,7 @@
       margin: auto;
       display: flex;
       justify-content: center;
+      align-items: center;
       &:hover {
         transform: scale(1.05);
       }

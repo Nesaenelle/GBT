@@ -21,9 +21,8 @@
       background-size: cover;
       right: 0;
       height: 100%;
-      width: 200px;
+      width: 300px;
       top: 0;
-      
     }
     .container {
       padding-top: 71px;
@@ -157,6 +156,7 @@
             .substance {
               font-weight: 600;
               margin-right: auto;
+              color: #545454;
             }
             .weight {
               justify-self: flex-end;
@@ -184,6 +184,8 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+
     &:hover {
       transform: scale(1.15);
     }
