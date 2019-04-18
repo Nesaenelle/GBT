@@ -47,37 +47,6 @@
         height: 873px;
         display: block;
       }
-
-      // .ball {
-      //   position: absolute;
-      //   width: 10px;
-      //   height: 10px;
-      //   background-color: red;
-      //   border-radius: 50%;
-        
-      //   offset-path: path('M10 80 Q 77.5 10, 145 80 T 280 80');
-      //   offset-distance: 0%;
-      
-      //   animation: red-ball 2s linear alternate infinite;
-      // }
-
-      // .plane-icon {
-      //   position: absolute;
-      //   width: 10px;
-      //   height: 10px;
-      //   background-color: red;
-      //   border-radius: 50%;
-      //   offset-distance: 0%;
-      //   offset-anchor: 100px 100px;
-      //   animation: red-ball 20s linear alternate infinite;
-      //   &--usa {
-      //     offset-path: path('M1139,260 Q950,0 425,320');
-      //   }
-      //   &--china {
-      //     offset-path: path('M1139,260 Q1350,50 1500,345');
-      //   }
-      // }
-
       svg {
        
         rect {
@@ -96,14 +65,6 @@
             stroke-dashoffset: 0;
           }
         }
-        // @keyframes red-ball {
-        //   from {
-        //     offset-distance: 0%;
-        //   }
-        //   to {
-        //     offset-distance: 100%;
-        //   }
-        // }
 
         .path {
           animation: dash 30s linear infinite;

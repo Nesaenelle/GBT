@@ -1169,7 +1169,7 @@
                         <path id="usa-path" class="path" d="M1139,260 Q950,0 425,320"
                         fill="none" stroke="#000" stroke-width="2px" />
 
-                        <path class="path" d="M1139,260 Q1050,50 955,208"
+                        <path id="scotland-path" class="path" d="M1139,260 Q1050,50 955,208"
                         fill="none" stroke="#000" stroke-width="2px" />
 
                         <path class="path" d="M1139,260 Q950,300 1020,505"
@@ -1179,14 +1179,29 @@
                         fill="none" stroke="#000" stroke-width="2px" />
                     </g>
 
-                    <circle id="circle" r="10" cx="0" cy="0" fill="tomato" />
+                    <defs>
+                        <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="55" width="55">
+                            <image x="0" y="0" xlink:href="img/air-transport.png"></image>
+                        </pattern>
+                    </defs>
+                    <!-- <circle id="circle" r="19" cx="0" cy="0" fill="url(#image)"/> -->
+                    <circle id="circle-usa" r="7" cx="0" cy="0" fill="tomato"/>
+                    <circle id="circle-scotland" r="7" cx="0" cy="0" fill="tomato"/>
                     <animateMotion 
-                                xlink:href="#circle"
-                                dur="5s"
+                                xlink:href="#circle-usa"
+                                dur="50s"
                                 begin="0s"
                                 fill="freeze"
                                 repeatCount="indefinite">
                         <mpath xlink:href="#usa-path" />
+                    </animateMotion>
+                    <animateMotion 
+                                xlink:href="#circle-scotland"
+                                dur="50s"
+                                begin="0s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                        <mpath xlink:href="#scotland-path" />
                     </animateMotion>
 
                </svg>
