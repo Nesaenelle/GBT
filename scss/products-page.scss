@@ -58,6 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.1s;
         img {
           width: 65px;
           margin: 14px auto 17px;
@@ -73,9 +74,9 @@
           text-align: center;
         }
         &:hover {
-          a {
-            transform: scale(1.1);
-          }
+          // a {
+            transform: scale(1.02);
+          // }
         }
       }
       &:nth-child(2) {

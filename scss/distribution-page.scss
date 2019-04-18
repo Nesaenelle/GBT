@@ -24,6 +24,7 @@
     &__image {
       width: calc(66% + 5px);
       position: relative;
+
       &:after {
         content: '';
         height: 100%;
@@ -40,11 +41,76 @@
         background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(250,250,254,0) 42%, rgba(244,244,253,0.98) 99%, rgba(244,244,253,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4fd', GradientType=1 );
       }
-      img {
+      img, svg {
         width: 100%;
         object-fit: cover;
         height: 873px;
         display: block;
+      }
+
+      // .ball {
+      //   position: absolute;
+      //   width: 10px;
+      //   height: 10px;
+      //   background-color: red;
+      //   border-radius: 50%;
+        
+      //   offset-path: path('M10 80 Q 77.5 10, 145 80 T 280 80');
+      //   offset-distance: 0%;
+      
+      //   animation: red-ball 2s linear alternate infinite;
+      // }
+
+      // .plane-icon {
+      //   position: absolute;
+      //   width: 10px;
+      //   height: 10px;
+      //   background-color: red;
+      //   border-radius: 50%;
+      //   offset-distance: 0%;
+      //   offset-anchor: 100px 100px;
+      //   animation: red-ball 20s linear alternate infinite;
+      //   &--usa {
+      //     offset-path: path('M1139,260 Q950,0 425,320');
+      //   }
+      //   &--china {
+      //     offset-path: path('M1139,260 Q1350,50 1500,345');
+      //   }
+      // }
+
+      svg {
+       
+        rect {
+          fill: #2d2a6a;
+        }
+        text {
+          // color: #fff;
+          fill: #fff;
+          font: normal 13px sans-serif; 
+        }
+        @keyframes dash {
+          from {
+            stroke-dashoffset: 320;
+          }
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        // @keyframes red-ball {
+        //   from {
+        //     offset-distance: 0%;
+        //   }
+        //   to {
+        //     offset-distance: 100%;
+        //   }
+        // }
+
+        .path {
+          animation: dash 30s linear infinite;
+          stroke-dasharray: 320;
+          stroke-dashoffset: 0;
+          stroke-width: 2; stroke-dasharray: 3, 8; stroke-linecap: round;
+        }
       }
     }
     &__info {
