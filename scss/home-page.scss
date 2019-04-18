@@ -72,14 +72,19 @@
     position: absolute;
     right: 0;
     top: 0px;
-    bottom: 13px;
-    margin: auto;
-    display: flex;
-    height: 118px;
+    // bottom: 13px;
+    // margin: auto;
+
+    height: calc(100% - 150px - 44px);
     width: 49px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    align-content: center;
+    & > div {
+      
+    }
     &__item {
       width: 49px;
       height: 49px;
@@ -87,6 +92,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 16px;
       img {
         transition: 0.1s;
       }
