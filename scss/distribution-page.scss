@@ -5,6 +5,13 @@
   .top-panel {
     background: url(../img/distblue.png);
     padding: 55px 0 58px;
+        
+    &__title {
+      img {
+        width: 90px;
+        margin: -20px 0 0 34px;
+      }
+    }
   }
   .bottom-panel {
     margin-top: 0;

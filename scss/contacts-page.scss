@@ -6,6 +6,13 @@
   .top-panel {
     background: url(../img/contactblue.png);
     padding: 46px 0 47px;
+    
+    &__title {
+      img {
+        width: 52px;
+        margin: 6px 0 0 38px;
+      }
+    }
   }
   .bottom-panel {
     margin-top: 49px;

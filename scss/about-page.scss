@@ -6,6 +6,12 @@
   }
   .top-panel {
     background: url(../img/abcompany.png);
+    &__title {
+      img {
+        width: 105px;
+        margin: -10px 0 0 23px;
+      }
+    }
   }
 
   .bottom-panel {
