@@ -223,3 +223,36 @@ main {
     margin-bottom: 22px;
   }
 }
+
+[data-animate] {
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideinDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@keyframes slideinUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

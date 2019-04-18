@@ -80,6 +80,8 @@
 
   .career {
     width: 100%;
+    overflow: hidden;
+    padding-bottom: 56px;
     .title {
       margin: 62px 0 19px;
     }
@@ -96,7 +98,16 @@
       margin-top: 34px;
       &_item {
         width: calc(100% / 3);
+        transform: translateY(200%);
+        &[data-animate="true"] {
+          animation-duration: 1.5s;
+          animation-name: slideinUp;
+        }
+        &:nth-child(1) {
+          animation-delay: 0s;
+        }
         &:nth-child(2) {
+          animation-delay: 0.5s;
           .career__list_item--image {
             img {
               width: 60px;
@@ -104,6 +115,7 @@
           }
         }
         &:nth-child(3) {
+          animation-delay: 1s;
           .career__list_item--image {
             img {
               width: 60px;
@@ -162,7 +174,7 @@
     background: url(../img/career-bg.png) no-repeat;
     background-size: cover;
     padding: 64px 0 71px 0;
-    margin-top: 56px;
+    // margin-top: 56px;
     &__title {
       text-align: center;
       color: #fff;
