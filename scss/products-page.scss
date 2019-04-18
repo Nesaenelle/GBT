@@ -25,9 +25,10 @@
   .tm-list {
     display: flex;
     flex-wrap: wrap;
-    .btn {
-      display: block;
+    a {
       margin: 35px auto 0;
+    }
+    .btn {
       width: 230px;
       padding: 15px 14px 13px;
     }
@@ -62,7 +63,7 @@
           margin: 14px auto 17px;
           display: block;
         }
-        span {
+        a {
           padding: 20px 0;
           width: 100%;
           font-size: 24px;
@@ -70,6 +71,11 @@
           border-top: 1px solid #6d6986;
           border-bottom: 1px solid #6d6986;
           text-align: center;
+        }
+        &:hover {
+          a {
+            transform: scale(1.1);
+          }
         }
       }
       &:nth-child(2) {
