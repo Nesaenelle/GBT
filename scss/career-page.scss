@@ -19,6 +19,18 @@
     text-transform: uppercase;
     color: #2e2d2d;
     width: 100%;
+    @media screen and (max-width: 1280px) {
+      font-size: 42px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 28px;
+    }
   }
 
   .vacancies {
@@ -27,6 +39,9 @@
     padding-bottom: 85px;
     .title {
       margin: 64px 0 36px;
+      @media screen and (max-width: 768px) {
+        margin: 40px 0 20px;
+      }
     }
     &__list {
       height: 300px;
@@ -73,6 +88,12 @@
           color: #222222;
           margin-top: 15px;
           line-height: 1.5em;
+          @media screen and (max-width: 768px) {
+            padding-right: 20px;
+          }
+          @media screen and (max-width: 360px) {
+            padding-right: 0px;
+          }
         }
       }
     }
@@ -84,6 +105,9 @@
     padding-bottom: 56px;
     .title {
       margin: 62px 0 19px;
+      @media screen and (max-width: 768px) {
+        margin: 40px 0 15px;
+      }
     }
     &__text {
       text-align: center;
@@ -91,14 +115,25 @@
       padding: 0 100px;
       line-height: 1.6em;
       color: #626262;
+      @media screen and (max-width: 768px) {
+        padding: 0 40px;
+      }
+      @media screen and (max-width: 360px) {
+        padding: 0px;
+      }
     }
     &__list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       margin-top: 34px;
       &_item {
         width: calc(100% / 3);
         transform: translateY(200%);
+        @media screen and (max-width: 768px) {
+          width:  calc(100% / 1);
+          margin-bottom: 30px;
+        }
         &[data-animate="true"] {
           animation-duration: 1.5s;
           animation-name: slideinUp;
@@ -164,6 +199,12 @@
           padding: 0 7px;
           color: #797979;
           line-height: 1.75em;
+          @media screen and (max-width: 768px) {
+            padding: 0 40px;
+          }
+          @media screen and (max-width: 360px) {
+            padding: 0;
+          }
         }
       }
     }
@@ -175,6 +216,9 @@
     background-size: cover;
     padding: 64px 0 71px 0;
     // margin-top: 56px;
+    @media screen and (max-width: 768px) {
+      padding: 40px 0 40px 0;
+    }
     &__title {
       text-align: center;
       color: #fff;
@@ -182,6 +226,19 @@
       width: 520px;
       margin: auto;
       text-transform: uppercase;
+      @media screen and (max-width: 1280px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 22px;
+      }
     }
     .btn {
       display: block;
