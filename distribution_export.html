@@ -1258,11 +1258,11 @@
                         fill="none" stroke="#000" />
                     </g>
 
-                    <!-- <defs>
-                        <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="55" width="55">
+                    <defs>
+                        <pattern id="image" x="12" y="17" patternUnits="userSpaceOnUse" height="24" width="24">
                             <image x="0" y="0" xlink:href="img/air-transport.png"></image>
                         </pattern>
-                    </defs> -->
+                    </defs>
                     
                     <g>
                         <circle r="3" cx="425" cy="320" fill="#d9252d"/>
@@ -1278,32 +1278,35 @@
                     </g>
 
                     <g class="plane-circle">
-                        <circle id="circle-usa" r="6" cx="0" cy="0" fill="#d9252d"/>
-                        <circle id="circle-china" r="6" cx="0" cy="0" fill="#d9252d"/>
-                        <circle id="circle-nigeria" r="6" cx="0" cy="0" fill="#d9252d"/>
+                        <circle id="circle-usa" r="11" cx="0" cy="0" fill="url(#image)"/>
+                        <circle id="circle-china" r="11" cx="0" cy="0" fill="url(#image)"/>
+                        <circle id="circle-nigeria" r="11" cx="0" cy="0" fill="url(#image)"/>
                     </g>
 
                     <animateMotion 
                                 xlink:href="#circle-usa"
-                                dur="40s"
+                                dur="80s"
                                 begin="0s"
                                 fill="freeze"
+                                rotate="auto"
                                 repeatCount="indefinite">
                         <mpath xlink:href="#usa-path" />
                     </animateMotion>
                     <animateMotion 
                                 xlink:href="#circle-china"
-                                dur="40s"
-                                begin="0s"
+                                dur="50s"
+                                begin="1s"
                                 fill="freeze"
+                                rotate="auto"
                                 repeatCount="indefinite">
                         <mpath xlink:href="#china-path" />
                     </animateMotion>
                     <animateMotion 
                                 xlink:href="#circle-nigeria"
-                                dur="50s"
-                                begin="0s"
+                                dur="30s"
+                                begin="2s"
                                 fill="freeze"
+                                rotate="auto"
                                 repeatCount="indefinite">
                         <mpath xlink:href="#nigeria-path" />
                     </animateMotion>
