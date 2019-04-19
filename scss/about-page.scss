@@ -9,9 +9,49 @@ $border-size: 1px;
   .top-panel {
     background: url(../img/abcompany.png);
     &__title {
-      img {
-        width: 105px;
-        margin: -10px 0 0 23px;
+      &--img {
+        position: relative;
+        display: inline-block;
+        top: -9px;
+        left: 17px;
+        > div:nth-child(1) {
+          background: url(../img/animation/hand/handshake.svg) ;
+          background-repeat: repeat-x;
+          width: 78px;
+          height: 78px;
+          position: absolute;
+
+          background-position: 0 0;
+          top: -41px;
+          left: 7px;
+          animation: 2s firstHand linear;
+          animation-fill-mode: forwards;
+         }
+         > div:nth-child(2) {
+          background: url(../img/animation/hand/handshake2.svg) ;
+          background-repeat: repeat-x;
+          width: 78px;
+          height: 78px;
+          position: absolute;
+
+          background-position: 0 0;
+          top: -41px;
+          left: 31px;
+          animation: 2s secondHand linear;
+          animation-fill-mode: forwards;
+         }
+         > div:nth-child(3) {
+          background: url(../img/animation/hand/handshake3.svg) ;
+          background-size: cover;
+          width: 35px;
+          height: 35px;
+          position: absolute;
+          background-position: 0 0;
+          top: 9px;
+          left: 21px;
+          animation: 2s thumbs linear;
+          animation-fill-mode: forwards;
+         }
       }
     }
   }
@@ -468,3 +508,51 @@ $border-size: 1px;
   }
 
 }
+
+
+
+
+
+@keyframes firstHand {
+  0% {
+   transform: translate(0,0,0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0,5px,0) rotate(-10deg);
+  }
+
+  100% {    
+   transform: translate(0, 6px,0)  rotate(0deg);
+  }
+}
+
+@keyframes secondHand {
+  0% {
+    transform: translate(0,0,0) rotate(0deg);
+   }
+ 
+   50% {
+     transform: translate(0px, 0px,0) rotate(-10deg);
+   }
+ 
+   100% {    
+    transform: translate(0px, 5px,0)  rotate(3deg);
+   }
+}
+
+@keyframes thumbs {
+  0% {
+    transform: translate(2px,0,0) rotate(0deg);
+   }
+ 
+   50% {
+     transform: translate(9px,0px,0) rotate(-10deg);
+   }
+ 
+   100% {    
+    transform: translate(8px,0px,0)  rotate(0deg);
+   }
+}
+
+
