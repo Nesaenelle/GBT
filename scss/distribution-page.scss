@@ -17,16 +17,16 @@
           background: url(../img/animation/botl/mass-production-1.svg) ;
           background-repeat: repeat-x;
           // background-size: cover;
-          width: 76px;
+          width: 74px;
           height: 58px;
           position: absolute;
           animation: 5s bgAnim linear infinite;
           background-position: 0 0;
-          top: -42px;
-          left: 6px
+          top: -41px;
+          left: 7px
          }
          > div:last-child {
-          background: url(../img/mass-production-1.png) ;
+          background: url(../img/animation/botl/mass-production.svg);
           background-size: cover;
           width: 90px;
           height: 20px;
@@ -175,7 +175,7 @@
 
   100% {
   
-    background-position: 76px 0;
+    background-position: 74px 0;
   }
 }
 
