@@ -42,7 +42,7 @@ main {
   background-size: cover;
   align-self: flex-start;
   text-align: left;
-  background-position: center!important;
+  background-position: center !important;
   .container {
   }
   .breadcrumbs {
@@ -70,6 +70,18 @@ main {
     text-transform: uppercase;
     margin: 7px 0 0px;
     position: relative;
+    @media screen and (max-width: 1280px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 24px;
+    }
     &:after {
       content: "";
       height: 4px;
@@ -78,7 +90,8 @@ main {
       display: block;
       margin: 20px 0 24px;
     }
-    img, svg{
+    img,
+    svg {
       position: absolute;
     }
   }
@@ -96,6 +109,9 @@ main {
   margin-top: 20px;
   padding: 15px 0;
   align-self: flex-end;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
   .container {
     max-width: calc(1355px);
     display: flex;
@@ -243,7 +259,6 @@ main {
   }
 }
 
-
 @keyframes slideinUp {
   from {
     transform: translateY(100%);
@@ -258,48 +273,44 @@ main {
   }
 }
 
-
 @keyframes slideinRight {
   from {
-      transform: translateX(100%);
-      opacity: 0;
-      visibility: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
   }
 
   to {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 
 @keyframes slideinLeft {
   from {
-      transform: translateX(-100%);
-      opacity: 0;
-      visibility: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
   }
 
   to {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
-
 
 @keyframes slideinDiagonal {
   from {
-      transform: translate(-200%, -200%);
-      opacity: 0;
-      visibility: hidden;
+    transform: translate(-200%, -200%);
+    opacity: 0;
+    visibility: hidden;
   }
 
   to {
-      transform: translate(0, 0);
-      opacity: 1;
-      visibility: visible;
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
   }
 }
-
-

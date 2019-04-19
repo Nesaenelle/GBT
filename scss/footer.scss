@@ -3,6 +3,10 @@ footer {
     padding: 13px 0;
     border-top: 4px solid #bb2b31;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
     .container {
         display: flex;
         max-width: 1254px;
