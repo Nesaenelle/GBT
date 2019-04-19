@@ -7,8 +7,9 @@
     padding: 55px 0 58px;
         
     &__title {
-      img {
+      img, svg {
         width: 90px;
+        height: 90px;
         margin: -20px 0 0 34px;
       }
     }
@@ -24,7 +25,7 @@
     &__image {
       width: calc(66% + 5px);
       position: relative;
-
+      overflow: hidden;
       &:after {
         content: '';
         height: 100%;

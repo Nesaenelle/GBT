@@ -45,8 +45,12 @@
                         <li><a href="contacts.html"><span>Контакты</span></a></li>
                     </ul>
                 </nav>
-                <div class="language">
-                    <div class="language__active">RU</div>
+                <div class="language" data-dropdown>
+                    <div class="language__active" data-dropdown-active>RU</div>
+                    <ul class="language__list" data-dropdown-list>
+                        <li data-dropdown-id="ru" class="active">RU</li>
+                        <li data-dropdown-id="eng">ENG</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -72,13 +76,9 @@
 
         <div class="container">
             <div class="title title-about">О нас</div>
+            
             <div class="about-list"  data-animate>
                 <div class="about-list__item">
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
-                    <!-- <div class="about-list__item--line"></div> -->
-
                     <div class="about-list__item--image"><img src="img/leaf.png" alt=""></div>
                     <div class="about-list__item--title"> GLOBAL BEVERAGE TRADE</div>
                     <div class="about-list__item--text"> основана в 1996 году, динамично развивающаяся дистрибьюционная
@@ -92,9 +92,6 @@
                         11 тыс м.кв.</div>
                 </div>
                 <div class="about-list__item">
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
                     <div class="about-list__item--title"> НАШИ ПРОДУКТЫ</div>
                     <div class="about-list__item--text">основана в 1996 году, динамично развивающаяся дистрибьюционная
                         кампания как собтсвенных торговых
@@ -108,9 +105,6 @@
                     <div class="about-list__item--image"><img src="img/wine.svg" alt=""></div>
                 </div>
                 <div class="about-list__item">
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
-                    <div class="about-list__item--line"></div>
                     <div class="about-list__item--image"><img src="img/hand-shake.png" alt=""></div>
                     <div class="about-list__item--title"> ПАРТНЕРЫ</div>
                     <div class="about-list__item--text">Нашими партнёрами являются 80 ведущих дистрибьюторов и 16
@@ -230,7 +224,11 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="src/dropdown.js"></script>
     <script src="src/animate.js"></script>
+    
 </body>
 
 </html>

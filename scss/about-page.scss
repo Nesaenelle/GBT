@@ -264,87 +264,14 @@
 
     &[data-animate="true"] {
       .about-list__item:nth-child(1) {
-        .about-list__item--line {
-          &:nth-child(1) {
-            animation-name: topLine;
-            animation-delay: 0s;
-          }
-          &:nth-child(2) {
-            animation-name: rightLine;
-            animation-delay: 1.1s;
-            animation-duration: 0.5s;
-            &:before {
-              animation-name: topCorner;
-              animation-delay: 0.9s;
-              animation-duration: 0.2s;
-            }
-            &:after {
-              animation-name: bottomCorner;
-              animation-delay: 1.5s;
-              animation-duration: 0.2s;
-            }
-          }
-          &:nth-child(3) {
-            animation-name: topLine;
-            animation-delay: 1.7s;  
-          }
-        }
 
       }
       .about-list__item:nth-child(2) {
-        .about-list__item--line {
-        &:nth-child(1) {
-          animation-name: topLine;
-          animation-delay: 2.7s;
-        }
-        &:nth-child(2) {
-          animation-name: rightLine;
-          animation-delay: 3.8s;
-          animation-duration: 0.5s;
-          &:before {
-            animation-name: topCorner;
-            animation-delay: 3.6s;
-            animation-duration: 0.2s;
-          }
-          &:after {
-            animation-name: bottomCorner;
-            animation-delay: 4.3s;
-            animation-duration: 0.2s;
-          }
-        }
-        &:nth-child(3) {
-          animation-name: topLine;
-          animation-delay: 4.5s;  
-        }
-      }
+
     }
     .about-list__item:nth-child(3) {
-      .about-list__item--line {
-      &:nth-child(1) {
-        animation-name: topLine;
-        animation-delay: 5.5s;
-      }
-      &:nth-child(2) {
-        animation-name: rightLine;
-        animation-delay: 6.6s;
-        animation-duration: 0.5s;
-        &:before {
-          animation-name: topCorner;
-          animation-delay: 6.4s;
-          animation-duration: 0.2s;
-        }
-        &:after {
-          animation-name: bottomCorner;
-          animation-delay: 7.1s;
-          animation-duration: 0.2s;
-        }
-      }
-      &:nth-child(3) {
-        animation-name: topLine;
-        animation-delay: 7.3s;  
-      }
-    }
-  }
+
+     }
   }
 
     &__item {
@@ -352,7 +279,8 @@
       margin-bottom: 43px;
       position: relative;
       height: 148px;
-
+      border: 1px solid #7e7aa4;
+      border-radius: 10px;
       display: flex;
       flex-wrap: wrap;
       align-content: center;
@@ -372,111 +300,12 @@
         .about-list__item--image {
           left: -55px;
         }
-        .about-list__item--line {
-          &:nth-child(1) {
-            left: 15px;
-            top: 0;
-            height: 0px;
-            width: 0%;
-            border-top: 1px solid #7e7aa4;
-            // border-right: 1px solid #7e7aa4;
-            border-radius: 0px 0px 0px 0;
-          }
-          &:nth-child(2) {
-            width: 1px;
-            height: 0;
-            top: 15px;
-            right: 0px;
-            border-right: 1px solid #7e7aa4;
-            &:before {
-              content: '';
-              position: absolute;
-              height: 0px;
-              width: 0px;
-              left: -20px;
-              top: -15px;
-              border-top: 1px solid #7e7aa4;
-              border-right: 1px solid #7e7aa4;
-              border-radius: 0 10px 0px 0;
-              animation-fill-mode: forwards;
-            }
-            &:after {
-              content: '';
-              position: absolute;
-              height: 0px;
-              width: 0px;
-              right: -1px;
-              top: calc(100% - 6px);
-              border-bottom: 1px solid #7e7aa4;
-              border-right: 1px solid #7e7aa4;
-              border-radius: 0 0 10px 0;
-              animation-fill-mode: forwards;
-            }
-          }
-          &:nth-child(3) {
-            right: 15px;
-            bottom: 0;
-            height: 0px;
-            width: 0%;
-            border-bottom: 1px solid #7e7aa4;
-            border-radius: 0px 0 0px 0px;
-          }
-        }
       }
       &:nth-child(even) {
         margin-right: 50px;
         padding-right: 129px;
         .about-list__item--image {
           right: -55px;
-        }
-        .about-list__item--line {
-          &:nth-child(1) {
-            right: 15px;
-            top: 0;
-            height: 0px;
-            width: 0%;
-            border-top: 1px solid #7e7aa4;
-            border-radius: 0px 0 0px 0px;
-          }
-          &:nth-child(2) {
-            width: 1px;
-            height: 0;
-            top: 15px;
-            left: 0px;
-            border-right: 1px solid #7e7aa4;
-            &:before {
-              content: '';
-              position: absolute;
-              height: 0px;
-              width: 0px;
-              right: -21px;
-              top: -15px;
-              border-top: 1px solid #7e7aa4;
-              border-left: 1px solid #7e7aa4;
-              border-radius: 10px 0px 0px 0;
-              animation-fill-mode: forwards;
-            }
-            &:after {
-              content: '';
-              position: absolute;
-              height: 0px;
-              width: 0px;
-              left: 0;
-              top: calc(100% - 6px);
-              border-bottom: 1px solid #7e7aa4;
-              border-left: 1px solid #7e7aa4;
-              border-radius: 0 0 0px 10px;
-              animation-fill-mode: forwards;
-            }
-          }
-          &:nth-child(3) {
-            left: 15px;
-            bottom: 0;
-            height: 0px;
-            width: 0%;
-            border-bottom: 1px solid #7e7aa4;
-            border-radius: 10px 0px 0px 0;
-          }
         }
       }
       &:nth-child(1){
@@ -545,58 +374,4 @@
       }
     }
   }
-}
-
-
-@keyframes topLine {
-	0% {
-    width: 0;
-    height: 0;
-	}
-	100% {
-    width: calc(100%-30px);
-    height: 20px;
-	}
-}
-
-
-@keyframes rightLine {
-	0% {
-		height: 0;
-	}
-	100% {
-		height: calc(100%-30px);
-	}
-}
-
-
-@keyframes topCorner {
-	0% {
-    width: 0;
-    height: 0;
-  }
-  50% {
-    width: 20px;
-    height: 5px;
-  }
-	100% {
-    width: 20px;
-    height: 20px;
-	}
-}
-
-
-@keyframes bottomCorner {
-	0% {
-    width: 0;
-    height: 0;
-  }
-  50% {
-    width: 5px;
-    height: 20;
-  }
-	100% {
-    width: 20px;
-    height: 20px;
-	}
 }

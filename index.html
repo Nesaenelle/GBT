@@ -44,8 +44,12 @@
                         <li><a href="contacts.html"><span>Контакты</span></a></li>
                     </ul>
                 </nav>
-                <div class="language">
-                    <div class="language__active">RU</div>
+                <div class="language" data-dropdown>
+                    <div class="language__active" data-dropdown-active>RU</div>
+                    <ul class="language__list" data-dropdown-list>
+                        <li data-dropdown-id="ru" class="active">RU</li>
+                        <li data-dropdown-id="eng">ENG</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -150,6 +154,7 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="src/main.js"></script>
     <script src="src/modal.js"></script>
+    <script src="src/dropdown.js"></script>
 </body>
 
 </html>
