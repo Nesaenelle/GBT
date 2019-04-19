@@ -1157,51 +1157,74 @@
                    l-2.6,2.5h-7.5l-6-5.8l-8.9-4.5L1601.3,252.6L1601.3,252.6z"/>
 
                    <g>  
-                       <rect x="425" y="320" width="50" height="20"></rect>
+                       <rect x="430" y="321" width="42" height="18"></rect>
                        <text  x="435" y="335" class="nigeria-text">США</text>
-                       <rect x="1020" y="510" width="80" height="20"></rect>
-                       <text x="1030" y="525" class="nigeria-text">Нигерия</text> 
-                       <rect x="1490" y="330"  width="70" height="20"></rect>
+                       <rect x="1025" y="500" width="65" height="18"></rect>
+                       <text x="1030" y="513" class="nigeria-text">Нигерия</text> 
+                       <rect x="1495" y="332"  width="51" height="18"></rect>
                        <text x="1500" y="345" class="nigeria-text">Китай</text>
                     </g>
 
                     <g>
-                        <path id="usa-path" class="path" d="M1139,260 Q950,0 425,320"
+                        <path id="usa-path" class="path" d="M1139,260 Q950,-50 425,320"
                         fill="none" stroke="#000" stroke-width="2px" />
 
                         <path id="scotland-path" class="path" d="M1139,260 Q1050,50 955,208"
                         fill="none" stroke="#000" stroke-width="2px" />
 
-                        <path class="path" d="M1139,260 Q950,300 1020,505"
+                        <path id="england-path" class="path" d="M1139,260 Q1110, 60 965,228"
                         fill="none" stroke="#000" stroke-width="2px" />
 
-                        <path class="path" d="M1139,260 Q1350,50 1500,345"
+                        <path id="nigeria-path" class="path" d="M1139,260 Q950,300 1020,505"
+                        fill="none" stroke="#000" stroke-width="2px" />
+
+                        <path id="china-path" class="path" d="M1139,260 Q1350,50 1490,345"
                         fill="none" stroke="#000" stroke-width="2px" />
                     </g>
 
-                    <defs>
+                    <!-- <defs>
                         <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="55" width="55">
                             <image x="0" y="0" xlink:href="img/air-transport.png"></image>
                         </pattern>
-                    </defs>
-                    <!-- <circle id="circle" r="19" cx="0" cy="0" fill="url(#image)"/> -->
-                    <circle id="circle-usa" r="7" cx="0" cy="0" fill="tomato"/>
-                    <circle id="circle-scotland" r="7" cx="0" cy="0" fill="tomato"/>
+                    </defs> -->
+                    
+                    <g>
+                        <circle r="3" cx="425" cy="320" fill="#d9252d"/>
+                        <circle r="3" cx="1020" cy="505" fill="#d9252d"/>
+                        <circle r="3" cx="955" cy="208" fill="#d9252d"/>
+                        <circle r="3" cx="965" cy="228" fill="#d9252d"/>
+                        <circle r="3" cx="1490" cy="345" fill="#d9252d"/>
+                    </g>
+
+                    <g class="plane-circle">
+                        <circle id="circle-usa" r="6" cx="0" cy="0" fill="#d9252d"/>
+                        <circle id="circle-china" r="6" cx="0" cy="0" fill="#d9252d"/>
+                        <circle id="circle-nigeria" r="6" cx="0" cy="0" fill="#d9252d"/>
+                    </g>
+
                     <animateMotion 
                                 xlink:href="#circle-usa"
-                                dur="50s"
+                                dur="40s"
                                 begin="0s"
                                 fill="freeze"
                                 repeatCount="indefinite">
                         <mpath xlink:href="#usa-path" />
                     </animateMotion>
                     <animateMotion 
-                                xlink:href="#circle-scotland"
+                                xlink:href="#circle-china"
+                                dur="40s"
+                                begin="0s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                        <mpath xlink:href="#china-path" />
+                    </animateMotion>
+                    <animateMotion 
+                                xlink:href="#circle-nigeria"
                                 dur="50s"
                                 begin="0s"
                                 fill="freeze"
                                 repeatCount="indefinite">
-                        <mpath xlink:href="#scotland-path" />
+                        <mpath xlink:href="#nigeria-path" />
                     </animateMotion>
 
                </svg>
