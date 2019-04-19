@@ -7,10 +7,33 @@
     padding: 55px 0 58px;
         
     &__title {
-      img, svg {
-        width: 90px;
-        height: 90px;
-        margin: -20px 0 0 34px;
+      &--img {
+        position: relative;
+        display: inline-block;
+        top: -9px;
+        left: 17px;
+         > div:first-child {
+          // background: url(../img/mass-production.png) ;
+          background: url(../img/animation/botl/mass-production-1.svg) ;
+  
+          background-size: cover;
+          width: 76px;
+          height: 54px;
+          position: absolute;
+          animation: 8s bgAnim linear infinite;
+          background-position: 0 0;
+          top: -44px;
+          left: 6px
+         }
+         > div:last-child {
+          background: url(../img/mass-production-1.png) ;
+          background-size: cover;
+          width: 90px;
+          height: 20px;
+          position: absolute;
+          background-position: 0 0;
+          top: 10px;
+         }
       }
     }
   }
@@ -140,5 +163,19 @@
     color: #bcbbcb;
     padding: 57px 0 50px 0;
     line-height: 1.5em;
+  }
+}
+
+
+@keyframes bgAnim {
+  0% {
+    // background-position: 0% 0;
+    transform: translate3d(0,0,0);
+    background-position: 0 0;
+  }
+
+  100% {
+    transform: translate3d(-120px,0,0);
+    background-position: -120px 0;
   }
 }

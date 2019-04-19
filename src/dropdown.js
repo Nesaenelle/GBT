@@ -14,6 +14,7 @@
         $listItems.removeClass('active');
         $(e.currentTarget).addClass('active');
         $activeEl.text(id.toUpperCase());
+        $dropdown.removeClass('opened');
     });
 
     window.addEventListener('click', function (e) {
