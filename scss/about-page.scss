@@ -269,13 +269,19 @@ $border-size: 1px;
         
       }
       .about-list__item:nth-child(1) {
-      
+        animation: borderAnimationLeft 3s linear 1;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
       }
       .about-list__item:nth-child(2) {
-
+        animation: borderAnimationRight 3s linear 1;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
       }
       .about-list__item:nth-child(3) {
-
+        animation: borderAnimationLeft 3s linear 1;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
       }
   }
     
@@ -328,9 +334,6 @@ $border-size: 1px;
         }
       }
       &:nth-child(1){
-        animation: borderAnimationLeft 3s linear 1;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             width: 30px;
@@ -338,9 +341,6 @@ $border-size: 1px;
         }
       }
       &:nth-child(2){
-        animation: borderAnimationRight 3s linear 1;
-        animation-delay: 2.5s;
-        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             margin-left: 5px;
@@ -348,9 +348,6 @@ $border-size: 1px;
         }
       }
        &:nth-child(3){
-        animation: borderAnimationLeft 3s linear 1;
-        animation-delay: 5s;
-        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             width: 76px;
