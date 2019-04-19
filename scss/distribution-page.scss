@@ -15,14 +15,14 @@
          > div:first-child {
           // background: url(../img/mass-production.png) ;
           background: url(../img/animation/botl/mass-production-1.svg) ;
-  
-          background-size: cover;
+          background-repeat: repeat-x;
+          // background-size: cover;
           width: 76px;
-          height: 54px;
+          height: 58px;
           position: absolute;
-          animation: 8s bgAnim linear infinite;
+          animation: 5s bgAnim linear infinite;
           background-position: 0 0;
-          top: -44px;
+          top: -42px;
           left: 6px
          }
          > div:last-child {
@@ -169,14 +169,13 @@
 
 @keyframes bgAnim {
   0% {
-    // background-position: 0% 0;
-    transform: translate3d(0,0,0);
+
     background-position: 0 0;
   }
 
   100% {
-    transform: translate3d(120px,0,0);
-    background-position: -120px 0;
+  
+    background-position: 76px 0;
   }
 }
 
