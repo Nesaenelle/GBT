@@ -1,3 +1,5 @@
+$border-size: 1px;
+
 .about-page {
   display: flex;
   flex-wrap: wrap;
@@ -263,52 +265,72 @@
   .about-list {
 
     &[data-animate="true"] {
+      .about-list__item {
+        
+      }
       .about-list__item:nth-child(1) {
-
+      
       }
       .about-list__item:nth-child(2) {
 
-    }
-    .about-list__item:nth-child(3) {
+      }
+      .about-list__item:nth-child(3) {
 
-     }
+      }
   }
-
+    
     &__item {
       padding: 18px 27px 9px 27px;
       margin-bottom: 43px;
       position: relative;
       height: 148px;
-      border: 1px solid #7e7aa4;
-      border-radius: 10px;
+
       display: flex;
       flex-wrap: wrap;
       align-content: center;
       background: #fff;
-      &--line {
-        position: absolute;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-      }
 
+      background-repeat: no-repeat;
+      background-image:   linear-gradient(to right, #7e7aa4 100%, #7e7aa4 100%),
+      linear-gradient(to bottom, #7e7aa4 100%, #7e7aa4 100%),
+      linear-gradient(to right, #7e7aa4 100%, #7e7aa4 100%),
+      linear-gradient(to bottom, #7e7aa4 100%, #7e7aa4 100%);
+      background-size:    0% $border-size,
+              $border-size 0%,
+              0% $border-size,
+              $border-size 0%;
+      
+      
       @media screen and (max-width: 1280px) {
         height: auto;
       }
       &:nth-child(odd) {
         margin-left: 50px;
         padding-left: 129px;
+        background-position:    0 0,
+                    100% 0,
+                    100% 100%,
+                    0 100%;
+
         .about-list__item--image {
-          left: -55px;
+          left: -63px;
         }
       }
       &:nth-child(even) {
         margin-right: 50px;
         padding-right: 129px;
+        background-position:    100% 0,
+                    0% 0%,
+                    0% 100%,
+                    100% 100%;
         .about-list__item--image {
-          right: -55px;
+          right: -63px;
         }
       }
       &:nth-child(1){
+        animation: borderAnimationLeft 3s linear 1;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             width: 30px;
@@ -316,6 +338,9 @@
         }
       }
       &:nth-child(2){
+        animation: borderAnimationRight 3s linear 1;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             margin-left: 5px;
@@ -323,6 +348,9 @@
         }
       }
        &:nth-child(3){
+        animation: borderAnimationLeft 3s linear 1;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
         .about-list__item--image {
           img {
             width: 76px;
@@ -374,4 +402,72 @@
       }
     }
   }
+}
+
+
+@keyframes borderAnimationLeft {
+  0% {
+      background-size:    0 $border-size,
+                          $border-size 0,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  25% {
+      background-size:    100% $border-size,
+                          $border-size 0,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  50% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  75% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          100% $border-size,
+                          $border-size 0;
+  }
+  100% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          100% $border-size,
+                          $border-size 100%;
+  }
+}
+
+@keyframes borderAnimationRight {
+  0% {
+    background-size:     0 $border-size,
+                         $border-size 0,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  25% {
+      background-size:    100% $border-size,
+                          $border-size 0,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  50% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          0 $border-size,
+                          $border-size 0;
+  }
+  75% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          100% $border-size,
+                          $border-size 0;
+  }
+  100% {
+      background-size:    100% $border-size,
+                          $border-size 100%,
+                          100% $border-size,
+                          $border-size 100%;
+  }
+
 }
