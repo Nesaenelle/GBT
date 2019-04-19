@@ -6,11 +6,53 @@
   .top-panel {
     background: url(../img/contactblue.png);
     padding: 46px 0 47px;
-    
+
     &__title {
-      img {
-        width: 52px;
-        margin: 6px 0 0 38px;
+      &--img {
+        position: relative;
+        display: inline-block;
+        top: -2px;
+        left: 20px;
+        > div:nth-child(1) {
+          background: url(../img/animation/call/phone-call.svg);
+          background-repeat: repeat-x;
+          width: 55px;
+          height: 55px;
+          position: absolute;
+
+          background-position: 0 0;
+          top: -41px;
+          left: 7px;
+          animation: 2s phone linear;
+          animation-fill-mode: forwards;
+        }
+        > div:nth-child(2) {
+          background: url(../img/animation/call/phone-call2.svg);
+          background-repeat: repeat-x;
+          width: 55px;
+          height: 55px;
+          position: absolute;
+
+          background-position: 0 0;
+          top: -40px;
+          left: 6px;
+          animation: 1.5s phoneSound1 linear;
+          animation-fill-mode: forwards;
+          opacity: 0;
+        }
+        > div:nth-child(3) {
+          background: url(../img/animation/call/phone-call3.svg);
+          background-size: cover;
+          width: 55px;
+          height: 55px;
+          position: absolute;
+          background-position: 0 0;
+          top: -40px;
+          left: 6px;
+          animation: 1s phoneSound2 linear;
+          animation-fill-mode: forwards;
+          opacity: 0;
+        }
       }
     }
   }
@@ -37,8 +79,6 @@
       margin: 10px 0 24px;
     }
   }
-
-
 
   .map {
     width: calc(100% - 449px);
@@ -73,5 +113,42 @@
         margin-left: 4px;
       }
     }
+  }
+}
+
+@keyframes phone {
+  0% {
+    transform: translate(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0, 0) rotate(3deg);
+  }
+
+  100% {
+    transform: translate(0, 0, 0) rotate(6deg);
+  }
+}
+
+@keyframes phoneSound1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes phoneSound2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
