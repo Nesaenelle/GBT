@@ -545,6 +545,10 @@ $border-size: 1px;
           margin-left: 0;
           padding-bottom: 20px;
         }
+        @media screen and (max-width: 360px) { 
+          padding-left: 20px;
+          padding-right: 20px;
+        }
 
         .about-list__item--image {
           left: -63px;
@@ -569,6 +573,10 @@ $border-size: 1px;
           margin-right: 0px;
           padding-bottom: 20px;
         }
+        @media screen and (max-width: 360px) { 
+          padding-left: 20px;
+          padding-right: 20px;
+        }
         .about-list__item--image {
           right: -63px;
           @media screen and (max-width: 768px) { 
@@ -582,7 +590,7 @@ $border-size: 1px;
           img {
             width: 30px;
             @media screen and (max-width: 768px) {
-              width: 25px;
+              width: 20px;
             }
           }
         }
@@ -599,7 +607,7 @@ $border-size: 1px;
           img {
             width: 76px;
             @media screen and (max-width: 768px) {
-              width: 60px;
+              width: 50px;
             }
           }
         }
@@ -628,8 +636,8 @@ $border-size: 1px;
         justify-content: center;
         align-items: center;
         @media screen and (max-width: 768px) {
-          width: 130px;
-          height: 130px;
+          width: 100px;
+          height: 100px;
           position: relative;
           left: auto;
           right: auto;
@@ -639,7 +647,7 @@ $border-size: 1px;
         img {
           width: 65px;
           @media screen and (max-width: 768px) {
-            width: 50px;
+            width: 40px;
           }
         }
         @media screen and (max-width: 1280px) {
