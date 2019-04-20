@@ -66,6 +66,22 @@
       @media screen and (max-width: 1280px) {
         width: 100%;
       }
+
+      &--export {
+        @media all and (-ms-high-contrast:none){
+          height: 0;
+          padding-top: 50%;
+        }
+
+        svg {
+          @media all and (-ms-high-contrast:none){
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      
       &:before {
         content: '';
         width: 100%;
