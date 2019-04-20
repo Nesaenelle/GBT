@@ -7,7 +7,7 @@ function closeModal() {
 function openModal(e) {
     var $target = $(e.currentTarget);
     var id = $target.data('modal');
-    var modal = $(`[data-modal-id="${id}"]`);
+    var modal = $('[data-modal-id="'+id+'"]');
     var overlay = $('.modal-overlay');
 
     modal.addClass('opened');

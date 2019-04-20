@@ -1,7 +1,7 @@
 ; (function () {
-    var elements = document.querySelectorAll('[data-animate]');
+    var elements = $('[data-animate]');
     function update() {
-        elements.forEach(function (elem) {
+        elements.each(function (i, elem) {
             if (isInViewport(elem, 150)) {
                 if (!elem.getAttribute('data-animate')) {
                     elem.setAttribute('data-animate', true);

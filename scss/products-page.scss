@@ -1,8 +1,8 @@
 .products-page {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   .top-panel {
     background: url(../img/contactblue.png);
     padding: 46px 0 47px;
@@ -161,6 +161,7 @@
       }
       &:nth-child(2) {
         background: url(../img/ownblue1.png) no-repeat;
+        background-position: center;
         width: 34%;
         padding: 0 60px;
         @media screen and (max-width: 1024px) {
@@ -176,12 +177,15 @@
       }
       &:nth-child(4) {
         background: url(../img/ownblue2.png) no-repeat;
+        background-position: center;
       }
       &:nth-child(5) {
         background: url(../img/ownblue3.png) no-repeat;
+        background-position: center;
       }
       &:nth-child(7) {
         background: url(../img/ownblue4.png) no-repeat;
+        background-position: center;
         width: 34%;
         padding: 0 60px;
         @media screen and (max-width: 1024px) {
@@ -197,6 +201,7 @@
       }
       &:nth-child(10) {
         background: url(../img/ownblue5.png) no-repeat;
+        background-position: center;
         width: 34%;
         padding: 0 60px;
         @media screen and (max-width: 1024px) {
@@ -212,6 +217,7 @@
       }
       &:nth-child(12) {
         background: url(../img/ownblue6.png) no-repeat;
+        background-position: center;
       }
     }
   }

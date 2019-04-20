@@ -568,7 +568,10 @@ $border-size: 1px;
               0% $border-size,
               $border-size 0%;
       
-      
+      @media all and (-ms-high-contrast:none)
+        {
+          border: 1px solid #7e7aa4;
+        }
       @media screen and (max-width: 1280px) {
         height: auto;
       }

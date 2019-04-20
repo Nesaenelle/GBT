@@ -38,6 +38,7 @@ header {
       width: 100%;
       // top: 113px;
       bottom: 0px;
+      left: 0;
       position: absolute;
       z-index: -1;
       height: 10px;
@@ -93,7 +94,11 @@ header {
     .language {
       position: absolute;
       right: 98px;
-      padding-top: 5px;
+      padding-top: 3px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 20px;
       @media screen and (max-width: 1280px) {
         right: 50px;
       }
@@ -146,7 +151,7 @@ header {
         padding: 0;
         opacity: 0;
         visibility: hidden;
-        top: -10px;
+        top: -12px;
         
         transition: .2s;
         right:-10px;
