@@ -25,6 +25,10 @@
           left: 7px;
           animation: 2s phone linear;
           animation-fill-mode: forwards;
+          @media screen and (max-width: 480px) {
+            width: 40px;
+            height: 40px;
+          }
         }
         > div:nth-child(2) {
           background: url(../img/animation/call/phone-call2.svg);
@@ -39,6 +43,10 @@
           animation: 1.5s phoneSound1 linear;
           animation-fill-mode: forwards;
           opacity: 0;
+          @media screen and (max-width: 480px) {
+            width: 40px;
+            height: 40px;
+          }
         }
         > div:nth-child(3) {
           background: url(../img/animation/call/phone-call3.svg);
@@ -52,12 +60,22 @@
           animation: 1s phoneSound2 linear;
           animation-fill-mode: forwards;
           opacity: 0;
+          @media screen and (max-width: 480px) {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
     }
   }
   .bottom-panel {
     margin-top: 49px;
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 0px;
+    }
   }
 
   .application-form {
