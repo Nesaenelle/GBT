@@ -30,6 +30,10 @@ $border-size: 1px;
             width: 60px;
             height: 60px;
           }
+          @media screen and (max-width: 480px) {
+            width: 45px;
+            height: 45px;
+          }
          }
          > div:nth-child(2) {
           background: url(../img/animation/hand/handshake2.svg) ;
@@ -49,6 +53,12 @@ $border-size: 1px;
             top: -41px;
             left: 26px;
           }
+          @media screen and (max-width: 480px) {
+            width: 45px;
+            height: 45px;
+            top: -40px;
+            left: 22px;
+          }
          }
          > div:nth-child(3) {
           background: url(../img/animation/hand/handshake3.svg) ;
@@ -66,6 +76,12 @@ $border-size: 1px;
             height: 28px;
             top: -2px;
             left: 15px;
+          }
+          @media screen and (max-width: 480px) {
+            width: 20px;
+            height: 20px;
+            top: -9px;
+            left: 12px;
           }
          }
       }
