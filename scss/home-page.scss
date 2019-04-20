@@ -153,6 +153,9 @@
           height: 78px;
           margin-right: 10px;
         }
+        @media screen and (max-width: 768px) and (max-height: 640px) {
+          display: none;
+        }
       }
     }
     &__text {
@@ -200,9 +203,7 @@
     @media screen and (max-width: 480px) {
       display: none;
     }
-    & > div {
-      
-    }
+
     &__item {
       width: 49px;
       height: 49px;
