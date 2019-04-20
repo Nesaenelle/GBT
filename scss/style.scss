@@ -98,6 +98,10 @@ main {
       background: #db272f;
       display: block;
       margin: 20px 0 24px;
+      @media screen and (max-width: 768px) {
+        margin: 15px 0 20px;
+        height: 3px;
+      }
     }
     img,
     svg {
@@ -109,6 +113,9 @@ main {
     color: #bcbbcb;
     line-height: 1.8em;
     letter-spacing: 0px;
+    @media screen and (max-width: 768px) {
+      line-height: 1.5em;
+    }
   }
 }
 
