@@ -8,7 +8,7 @@
   > .container {
     margin: initial;
     width: 100%;
-    // padding-top: 30px;
+    padding-top: 30px;
   }
   .title {
     color: #2d2a6a;
@@ -27,7 +27,7 @@
       font-size: 180px;
     }
     @media screen and (max-width: 360px) {
-      font-size: 140px;
+      font-size: 100px;
     }
   }
   .descr {
@@ -45,7 +45,7 @@
       font-size: 28px;
     }
     @media screen and (max-width: 360px) {
-      font-size: 26px;
+      font-size: 22px;
     }
   }
   .link {
@@ -63,7 +63,7 @@
       font-size: 22px;
     }
     @media screen and (max-width: 360px) {
-      font-size: 20px;
+      font-size: 18px;
     }
     a {
       text-decoration: underline;
