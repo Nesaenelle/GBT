@@ -1,9 +1,7 @@
 header {
   position: relative;
   z-index: 10;
-  @media screen and (max-width: 1024px) {
-    display: none;
-}
+
   &:before {
     content: "";
     height: 4px;
@@ -12,15 +10,20 @@ header {
     left: 0;
     top: 0;
     position: fixed;
+    z-index: 2;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
-  .header-shadow {
-    width: 100%;
-    top: 113px;
-    position: absolute;
-    z-index: -1;
-    height: 10px;
-    box-shadow: 0 0 5px -2px #000;
-  }
+
+  // .header-shadow {
+  //   width: 100%;
+  //   top: 113px;
+  //   position: absolute;
+  //   z-index: -1;
+  //   height: 10px;
+  //   box-shadow: 0 0 5px -2px #000;
+  // }
   .header-panel {
     position: absolute;
     width: 100%;
@@ -30,8 +33,32 @@ header {
     background: #fff;
     display: flex;
     justify-content: space-between;
+    &:after {
+      content: "";
+      width: 100%;
+      // top: 113px;
+      bottom: 0px;
+      position: absolute;
+      z-index: -1;
+      height: 10px;
+      box-shadow: 0 0 5px -2px #000;
+    }
+    @media screen and (max-width: 1024px) {
+      // height: 60px;
+      top: 0;
+    }
+    @media screen and (max-width: 768px) {
+      height: 60px;
+      // top: 0;
+    }
     &__left {
       width: 225px;
+      @media screen and (max-width: 1600px) {
+        width: 200px;     
+      }
+      @media screen and (max-width: 1280px) {
+        width: 180px;
+      }
     }
     .container {
       display: flex;
@@ -40,6 +67,9 @@ header {
       max-width: calc(1355px);
       height: 100%;
       position: relative;
+      @media screen and (max-width: 1024px) {
+        padding: 0;
+      }
     }
     .logo {
       width: 100px;
@@ -50,13 +80,29 @@ header {
         // left: -47px;
         position: relative;
         top: -9px;
+        @media screen and (max-width: 1024px) {
+          width: 126px;
+           top: 0;
+        }
+        @media screen and (max-width: 768px) {
+          width: 90px;
+          top: 5px;
+        }
       }
     }
     .language {
       position: absolute;
       right: 98px;
       padding-top: 5px;
-
+      @media screen and (max-width: 1280px) {
+        right: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+        right: 40px;
+      }
+      @media screen and (max-width: 768px) {
+        right: 20px;
+      }
       &.opened {
         .language__list {
           opacity: 1;
@@ -76,6 +122,9 @@ header {
         display: flex;
         align-items: center;
         color: #2c256b;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
         &:after {
           position: relative;
           z-index: 10 ;
@@ -104,6 +153,9 @@ header {
         box-shadow: 0 0px 15px -10px #000;
         // margin: auto;
         width: 70px;
+        @media screen and (max-width: 768px) {
+          right:-12px;;
+        }
         li {
           padding: 15px;
           transition: 0.2s;
@@ -111,6 +163,9 @@ header {
           color: #2c256b;
           font-weight: 600;
           text-align: center;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
           &:hover,
           &.active {
             background: #efefef;
@@ -122,7 +177,9 @@ header {
 
   nav {
     height: 100%;
-
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
     > ul {
       display: flex;
       align-items: center;
@@ -153,6 +210,7 @@ header {
           padding: 5px 20px;
           transition: 0.2s;
           box-shadow: 0 4px 10px -5px #000;
+
           li {
             &:first-child {
               border-bottom: 1px solid #e4e4ec;
@@ -185,9 +243,13 @@ header {
           padding: 0 29px 0 28px;
           display: block;
           position: relative;
-          // @media screen and (max-width: 1600px) {
-          //     padding: 0 20px;
-          // }
+          @media screen and (max-width: 1600px) {
+              padding: 0 20px;
+          }
+          @media screen and (max-width: 1280px) {
+            padding:  0 16px;
+            font-size: 14px;
+          }
           span {
             position: relative;
             height: 100%;

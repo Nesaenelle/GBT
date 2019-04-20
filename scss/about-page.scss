@@ -26,6 +26,10 @@ $border-size: 1px;
           left: 7px;
           animation: 2s firstHand linear;
           animation-fill-mode: forwards;
+          @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+          }
          }
          > div:nth-child(2) {
           background: url(../img/animation/hand/handshake2.svg) ;
@@ -39,6 +43,12 @@ $border-size: 1px;
           left: 31px;
           animation: 2s secondHand linear;
           animation-fill-mode: forwards;
+          @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+            top: -41px;
+            left: 26px;
+          }
          }
          > div:nth-child(3) {
           background: url(../img/animation/hand/handshake3.svg) ;
@@ -51,6 +61,12 @@ $border-size: 1px;
           left: 21px;
           animation: 2s thumbs linear;
           animation-fill-mode: forwards;
+          @media screen and (max-width: 768px) {
+            width: 28px;
+            height: 28px;
+            top: -2px;
+            left: 15px;
+          }
          }
       }
     }
