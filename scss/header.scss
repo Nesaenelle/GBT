@@ -25,6 +25,11 @@ header {
     background: #fff;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1440px) {
+      @media screen and (max-height: 800px) {
+         top: 0px;
+      }
+    }
     &:after {
       content: "";
       width: 100%;
