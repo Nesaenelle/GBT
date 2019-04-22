@@ -24,7 +24,7 @@ $border-size: 1px;
           background-position: 0 0;
           top: -41px;
           left: 7px;
-          animation: 2s firstHand linear;
+          animation: 2s firstHand linear infinite;
           animation-fill-mode: forwards;
           @media screen and (max-width: 768px) {
             width: 60px;
@@ -45,7 +45,7 @@ $border-size: 1px;
           background-position: 0 0;
           top: -41px;
           left: 31px;
-          animation: 2s secondHand linear;
+          animation: 2s secondHand linear infinite;
           animation-fill-mode: forwards;
           @media screen and (max-width: 768px) {
             width: 60px;
@@ -69,7 +69,7 @@ $border-size: 1px;
           background-position: 0 0;
           top: 9px;
           left: 21px;
-          animation: 2s thumbs linear;
+          animation: 2s thumbs linear infinite;
           animation-fill-mode: forwards;
           @media screen and (max-width: 768px) {
             width: 28px;

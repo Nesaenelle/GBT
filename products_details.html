@@ -25,7 +25,7 @@
                         <li><a href="index.html"><span>Главная</span></a></li>
                         <li><a href="about.html"><span>О компании</span></a></li>
                         <li>
-                            <a href="distribution.html" class="active">
+                            <a href="distribution.html">
                                 <span>Дистрибуция</span>
                             </a>
                             <ul>
@@ -34,7 +34,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="products.html"><span>Продукция</span></a>
+                            <a href="products.html" class="active"><span>Продукция</span></a>
                             <ul>
                                 <li><a href="products.html">Собственные</a></li>
                                 <li><a href="products_import.html">Импорт</a></li>
@@ -61,12 +61,12 @@
                             <li><a href="index.html"><span>Главная</span></a></li>
                             <li><a href="about.html"><span>О компании</span></a></li>
                             <li>
-                                <a href="distribution.html" class="active">
+                                <a href="distribution.html">
                                     <span>Дистрибуция</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="products.html"><span>Продукция</span></a>
+                                <a href="products.html" class="active"><span>Продукция</span></a>
                             </li>
                             <li><a href="career.html"><span>Карьера</span></a></li>
                             <li><a href="contacts.html"><span>Контакты</span></a></li>
@@ -81,16 +81,15 @@
         </div>
     </header>
 
-    <main class="distribution-page">
+    <main class="products-import-page">
         <div class="top-panel">
             <div class="container">
-                <div class="top-panel__title">
-                    <span>Дистрибуция</span>
-
-                    <div class="top-panel__title--img">
-                        <div class=""></div>
-                        <div class=""></div>
-                    </div>
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__item" href="index.html"><span>Главная</span></a>
+                    <a class="breadcrumbs__item" href="products.html"><span>Продукция</span></a>
+                    <span class="breadcrumbs__item">Коньяк ТМ Азнаури</span>
+                </div>
+                <div class="top-panel__title">Коньяк ТМ Азнаури
                 </div>
                 <div class="top-panel__descr">С другой стороны рамки и место обучения кадров влечет за собой процесс
                     внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Задача
@@ -98,45 +97,75 @@
                     (специалистов) участие в формировании новых предложений.</div>
             </div>
         </div>
-        <div class="map">
-            <div class="map__image">
-                <!-- <img src="img/ukraine.svg" alt=""> -->
-                <img src="img/pinmap.png" alt="">
-            </div>
-            <div class="map__info">
-                <div class="map__info-buttons">
-                    <a href="distribution.html"> <button class="btn btn-distribution">Дистрибуция</button></a>
-                    <a href="distribution_export.html"><button class="btn btn-distribution transparent">Export</button></a>
-                </div>
-                <div class="map__info-title">
-                    Modern Trade
-                </div>
-                <div class="map__info-text">
-                    Представлены в 16 национальных сетевых магазинах по всей территории Украины
-                </div>
-                <div class="map__info-title">
-                    Tradition Trade
-                </div>
 
-                <ul>
-                    <li><b>80 дистрибьюторов по всей территории Украины</b></li>
-                    <li> Более <b> 2 000 Торговых представителей</b></li>
-                    <li>
-                        Более  <b> 35 000 активных торговых точек.</b></li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="text-block">
+        <div class="product">
             <div class="container">
-                Равным образом консультация с широким активом требуют от нас анализа системы обучения кадров,
-                соответствует насущным потребностям. С другой стороны дальнейшее развитие различных форм деятельности
-                позволяет оценить значение соответствующий условий активизации. С другой стороны реализация намеченных
-                плановых заданий способствует подготовки и реализации систем массового участия. Задача организации, в
-                особенности же сложившаяся структура организации способствует подготовки и реализации соответствующий
-                условий активизации.
+                <div class="product-image">
+                    <img src="img/aznauribotle.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-info__title">ТМ Aznauri</div>
+                    <div class="product-info__subtitle">традиции виноделия!</div>
+                    <div class="product-info__descr">
+                        <div class="product-info__descr--logo"> <img src="img/aznauri-logo.png" alt=""></div>
+                        <p> Вино ТМ  AZNAURI – это уникальное вино изготовленное по оригинальным рецептурам из
+                            отборного винограда грузинских сортов Ркацители и Саперави.</p>
+                        <p>Из этих сортов делается большинство грузинских вин, они являются основой грузинского
+                            виноделия и отражают поистине грузинский характер вин. </p>
+                    </div>
+                    <a href="http://www.aznauri.com" class="product-info__link">www.aznauri.com</a>
+
+
+             
+                    <div class="slick__title"><span>Ассортимент</span></div>
+                    <div class="slider">
+                        <div class="slick__item">
+                            <img class="slick__item--img" src="img/bottlesmall.jpg" alt="">
+                            <div class="slick__item--info">
+                                <ul>
+                                    <li><img src="img/sugar.svg" alt=""><span class="substance">Сахар:</span><span class="weight">0,8g</span></li>
+                                    <li><img src="img/champagne.svg" alt=""><span class="substance">Алкоголь:</span><span class="weight">  40% об.</span></li>
+                                    <li><img src="img/shake.svg" alt=""><span class="substance">Вкус:</span><span class="weight">Полусладкое</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick__item">
+                            <img class="slick__item--img" src="img/bottlesmall.jpg" alt="">
+                            <div class="slick__item--info">
+                                <ul>
+                                    <li><img src="img/sugar.svg" alt=""><span class="substance">Сахар:</span><span class="weight">0,8g</span></li>
+                                    <li><img src="img/champagne.svg" alt=""><span class="substance">Алкоголь:</span><span class="weight">  40% об.</span></li>
+                                    <li><img src="img/shake.svg" alt=""><span class="substance">Вкус:</span><span class="weight">Полусладкое</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick__item">
+                            <img class="slick__item--img" src="img/bottlesmall.jpg" alt="">
+                            <div class="slick__item--info">
+                                <ul>
+                                    <li><img src="img/sugar.svg" alt=""><span class="substance">Сахар:</span><span class="weight">0,8g</span></li>
+                                    <li><img src="img/champagne.svg" alt=""><span class="substance">Алкоголь:</span><span class="weight">  40% об.</span></li>
+                                    <li><img src="img/shake.svg" alt=""><span class="substance">Вкус:</span><span class="weight">Полусладкое</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick__item">
+                                <img class="slick__item--img" src="img/bottlesmall.jpg" alt="">
+                                <div class="slick__item--info">
+                                    <ul>
+                                        <li><img src="img/sugar.svg" alt=""><span class="substance">Сахар:</span><span class="weight">0,8g</span></li>
+                                        <li><img src="img/champagne.svg" alt=""><span class="substance">Алкоголь:</span><span class="weight">  40% об.</span></li>
+                                        <li><img src="img/shake.svg" alt=""><span class="substance">Вкус:</span><span class="weight">Полусладкое</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                   
+                </div>
             </div>
+            <div class="product-bg"></div>
         </div>
+
 
         <div class="bottom-panel">
             <div class="container">
@@ -173,7 +202,9 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="src/product-import.js"></script>
     <script src="src/dropdown.js"></script>
     <script src="src/menu.js"></script>
 </body>

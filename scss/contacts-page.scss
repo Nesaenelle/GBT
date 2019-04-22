@@ -23,7 +23,7 @@
           background-position: 0 0;
           top: -41px;
           left: 7px;
-          animation: 2s phone linear;
+          animation: 3s phone linear infinite;
           animation-fill-mode: forwards;
           @media screen and (max-width: 480px) {
             width: 40px;
@@ -40,7 +40,7 @@
           background-position: 0 0;
           top: -40px;
           left: 6px;
-          animation: 1.5s phoneSound1 linear;
+          animation: 3s phoneSound1 linear infinite;
           animation-fill-mode: forwards;
           opacity: 0;
           @media screen and (max-width: 480px) {
@@ -57,7 +57,7 @@
           background-position: 0 0;
           top: -40px;
           left: 6px;
-          animation: 1s phoneSound2 linear;
+          animation: 3s phoneSound2 linear infinite;
           animation-fill-mode: forwards;
           opacity: 0;
           @media screen and (max-width: 480px) {
@@ -168,6 +168,9 @@
       .phone-number {
         cursor: pointer;
         margin-left: 4px;
+        span {
+          // text-decoration: underline;
+        }
         @media screen and (max-width: 480px) {
           // display: block;
           width: 100%;
@@ -197,6 +200,9 @@
     opacity: 0;
   }
   30% {
+    opacity: 0.2;
+  }
+  50% {
     opacity: 0.3;
   }
 
