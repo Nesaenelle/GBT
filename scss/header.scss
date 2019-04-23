@@ -79,6 +79,12 @@ header {
         // left: -47px;
         position: relative;
         top: -9px;
+        @media screen and (max-width: 1440px) {
+          @media screen and (max-height: 800px) {
+            width: 126px;
+            top: 5px;
+          }
+        }
         @media screen and (max-width: 1024px) {
           width: 126px;
           top: 5px;
