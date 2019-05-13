@@ -34,6 +34,9 @@ body {
 main {
   min-height: calc(100% - 44px);
   padding-top: 123px;
+  @media screen and (max-width: 1440px) {
+  padding-top: 80px;
+  }
   @media screen and (max-width: 1024px) {
     padding-top: 80px;
   }
