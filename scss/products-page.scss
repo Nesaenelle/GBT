@@ -55,7 +55,10 @@
       width: calc(22%);
       height: 247px;
       color: #fff;
+      flex-grow: 1;
       // overflow: hidden;
+
+
       @media screen and (max-width: 1024px) {
         width: calc(100%/3);
         &:nth-child(1) {order: 1;}
@@ -113,19 +116,67 @@
         position: relative;
         pointer-events: none;
       }
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(7),
-      &:nth-child(10),
-      &:nth-child(12) {
-        background-size: cover !important;
+
+      &--img {
+        width: 22%;
+        @media screen and (max-width: 1024px) {
+          width: calc(100%/3);
+        }
+        @media screen and (max-width: 768px) {
+          width: calc(100%/2);
+        }
+        @media screen and (max-width: 360px) {
+          width: calc(100%/1);
+        }
+      }
+      &--label-small {
+        width: 22%;
         padding: 0 20px;
+
+        a {
+          background: url(../img/ownblue2.jpg) no-repeat;
+          background-position: center;
+        }
+        @media screen and (max-width: 1024px) {
+          width: calc(100%/3);
+          padding: 0 20px;
+        }
+        @media screen and (max-width: 768px) {
+          width: calc(100%/2);
+        }
+        @media screen and (max-width: 360px) {
+          width: calc(100%/1);
+        }
+      }
+      &--label-big {
+        width: 34%;
+        padding: 0 60px;
+        a {
+          background: url(../img/ownblue1.jpg) no-repeat;
+          background-position: center;
+        }
+        @media screen and (max-width: 1024px) {
+          width: calc(100%/3);
+          padding: 0 20px;
+        }
+        @media screen and (max-width: 768px) {
+          width: calc(100%/2);
+        }
+        @media screen and (max-width: 360px) {
+          width: calc(100%/1);
+        }
+      }
+
+      &--label-small, &--label-big {
+        background-size: cover !important;
         display: flex;
         justify-content: center;
         align-items: center;
         // transition: 0.1s;
         position: relative;
+
+
+
         img {
           width: 65px;
           margin: 14px auto 17px;
@@ -164,78 +215,7 @@
           }
         }
       }
-      &:nth-child(2) {
-        a {
-          background: url(../img/ownblue1.jpg) no-repeat;
-          background-position: center;
-        }
-        width: 34%;
-        padding: 0 60px;
-        @media screen and (max-width: 1024px) {
-          width: calc(100%/3);
-          padding: 0 20px;
-        }
-        @media screen and (max-width: 768px) {
-          width: calc(100%/2);
-        }
-        @media screen and (max-width: 360px) {
-          width: calc(100%/1);
-        }
-      }
-      &:nth-child(4) {
-        a {
-          background: url(../img/ownblue2.jpg) no-repeat;
-          background-position: center;
-        }
-      }
-      &:nth-child(5) {
-       a {
-          background: url(../img/ownblue3.jpg) no-repeat;
-          background-position: center;
-       }
-      }
-      &:nth-child(7) {
-        a {
-          background: url(../img/ownblue4.jpg) no-repeat;
-          background-position: center;
-        }
-        width: 34%;
-        padding: 0 60px;
-        @media screen and (max-width: 1024px) {
-           width: calc(100%/3);
-           padding: 0 20px;
-         }
-         @media screen and (max-width: 768px) {
-          width: calc(100%/2);
-        }
-        @media screen and (max-width: 360px) {
-          width: calc(100%/1);
-        }
-      }
-      &:nth-child(10) {
-        a {
-          background: url(../img/ownblue5.jpg) no-repeat;
-          background-position: center;
-        }
-        width: 34%;
-        padding: 0 60px;
-        @media screen and (max-width: 1024px) {
-           width: calc(100%/3);
-           padding: 0 20px;
-         }
-         @media screen and (max-width: 768px) {
-          width: calc(100%/2);
-        }
-        @media screen and (max-width: 360px) {
-          width: calc(100%/1);
-        }
-      }
-      &:nth-child(12) {
-        a {
-          background: url(../img/ownblue6.jpg) no-repeat;
-          background-position: center;
-        }
-      }
+
     }
   }
 }

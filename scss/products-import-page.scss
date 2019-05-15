@@ -27,7 +27,13 @@
       width: 300px;
       top: 0;
       @media screen and (max-width: 1820px) {
-       display: none;
+       // display: none;
+        width: 200px;
+      }
+      @media screen and (max-width: 1600px) {
+       // display: none;
+        // width: 200px;
+        display: none;
       }
     }
     .container {
@@ -189,7 +195,7 @@
       }
     }
     &__item {
-      height: 250px;
+      // height: 250px;
       padding: 0px 0;
 
       display: flex;
@@ -218,6 +224,10 @@
       }
       &--info {
         margin-top: 21px;
+
+        .assoc_title {
+          min-height: 32px;
+        }
         ul {
           li {
             margin-bottom: 10px;
