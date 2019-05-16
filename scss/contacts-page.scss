@@ -71,10 +71,10 @@
   .bottom-panel {
     margin-top: 49px;
     @media screen and (max-width: 768px) {
-      margin-top: 20px;
+      margin-top: 30px;
     }
     @media screen and (max-width: 480px) {
-      margin-top: 0px;
+      // margin-top: 0px;
     }
   }
 
@@ -93,6 +93,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .text-content {
+    padding-left: 28px;
+    line-height: 1.4em;
   }
 
   .title {
@@ -144,6 +149,9 @@
       margin-bottom: 31px;
       display: flex;
       align-items: center;
+      &:last-child {
+        margin-bottom: 9px;
+      }
       @media screen and (max-width: 480px) {
         font-size: 14px;
       }
@@ -168,6 +176,7 @@
       .phone-number {
         cursor: pointer;
         margin-left: 4px;
+        font-family: Raleway regular,sans-serif;
         span {
           // text-decoration: underline;
         }

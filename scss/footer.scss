@@ -5,35 +5,72 @@ footer {
     position: relative;
     height: 44px;
     overflow: hidden;
+
     @media screen and (max-width: 1024px) {
         // display: none;
     }
+
+    // @media screen and (max-width: 768px) {
+    //     height: auto;
+    // }
+
     .container {
         display: flex;
-        max-width: 1254px;
+        max-width: 1490px;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
+
+    a {
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     .copyright {
         color: #a09dbc;
         font-size: 12px;
+
+        @media screen and (max-width: 768px) {
+            margin: 5px 0;
+        }
+
         &:first-child {
             @media screen and (max-width: 768px) {
                 line-height: 1em;
                 font-size: 11px;
                 text-align: center;
             }
+
             @media screen and (max-width: 360px) {
                 display: none;
             }
         }
-        &:last-child {
-            min-width: 66px;
-            margin-left: 20px;
+
+        &:nth-child(2) {
+            white-space: nowrap;
+
             @media screen and (max-width: 768px) {
                 display: none;
             }
+        }
+
+        &:last-child {
+            min-width: 66px;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
             @media screen and (max-width: 360px) {
                 display: block;
                 text-align: center;

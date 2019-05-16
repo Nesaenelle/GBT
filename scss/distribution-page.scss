@@ -176,7 +176,7 @@
         a {
           display: inline-block;
           @media screen and (max-width: 1440px) {
-            display: block;
+            // display: block;
           }
           @media screen and (max-width: 768px) {
             display: block;
@@ -226,6 +226,7 @@
         line-height: 1.5em;
         @media screen and (max-width: 1280px) {
           max-width: 100%; 
+          text-align: left;
         }
       }
       ul {

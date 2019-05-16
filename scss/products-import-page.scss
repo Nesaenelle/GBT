@@ -223,10 +223,14 @@
         display: block;
       }
       &--info {
-        margin-top: 21px;
+        // margin-top: 21px;
+        margin: 21px auto 0;
+        max-width: 190px;
 
         .assoc_title {
           min-height: 32px;
+          font-weight: 600;
+          color: #545454;
         }
         ul {
           li {

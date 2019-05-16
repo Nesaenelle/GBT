@@ -43,7 +43,7 @@
     @media screen and (max-width: 768px) {
       font-size: 32px;
     }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 420px) {
       font-size: 28px;
     }
   }
@@ -89,7 +89,7 @@
         &:nth-child(11) {order: 12;}
         &:nth-child(12) {order: 11;}
       }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 420px) {
         width: calc(100%/1);
         &:nth-child(1) {order: 1;}
         &:nth-child(2) {order: 2;}
@@ -125,11 +125,11 @@
         @media screen and (max-width: 768px) {
           width: calc(100%/2);
         }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 420px) {
           width: calc(100%/1);
         }
       }
-      &--label-small {
+      &--label-small, &--label-big {
         width: 22%;
         padding: 0 20px;
 
@@ -144,28 +144,28 @@
         @media screen and (max-width: 768px) {
           width: calc(100%/2);
         }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 420px) {
           width: calc(100%/1);
         }
       }
-      &--label-big {
-        width: 34%;
-        padding: 0 60px;
-        a {
-          background: url(../img/ownblue1.jpg) no-repeat;
-          background-position: center;
-        }
-        @media screen and (max-width: 1024px) {
-          width: calc(100%/3);
-          padding: 0 20px;
-        }
-        @media screen and (max-width: 768px) {
-          width: calc(100%/2);
-        }
-        @media screen and (max-width: 360px) {
-          width: calc(100%/1);
-        }
-      }
+      // &--label-big {
+      //   width: 34%;
+      //   padding: 0 60px;
+      //   a {
+      //     background: url(../img/ownblue1.jpg) no-repeat;
+      //     background-position: center;
+      //   }
+      //   @media screen and (max-width: 1024px) {
+      //     width: calc(100%/3);
+      //     padding: 0 20px;
+      //   }
+      //   @media screen and (max-width: 768px) {
+      //     width: calc(100%/2);
+      //   }
+      //   @media screen and (max-width: 420px) {
+      //     width: calc(100%/1);
+      //   }
+      // }
 
       &--label-small, &--label-big {
         background-size: cover !important;
@@ -204,7 +204,7 @@
           @media screen and (max-width: 768px) {
             font-size: 20px;
           }
-          @media screen and (max-width: 360px) {
+          @media screen and (max-width: 420px) {
             font-size: 18px;
           }
         }
