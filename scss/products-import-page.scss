@@ -165,6 +165,9 @@
 
   .slider {
     padding-right: 15px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
   }
   .slick {
     width: 100%;
@@ -231,13 +234,14 @@
           min-height: 32px;
           font-weight: 600;
           color: #545454;
+          margin: auto;
         }
         ul {
           li {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             font-size: 14px;
             .substance {
               font-weight: 600;
