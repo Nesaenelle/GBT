@@ -100,15 +100,15 @@
         position: relative;
         border: 1px solid #b3b2c9;
         padding: 39px 21px 42px 30px;
-        background: #fbfbfe;
+        // background: #fbfbfe;
         margin-top: 24px;
         @media screen and (max-width: 768px) {
           margin-top: 40px;
-          padding: 50px 20px 20px 20px;
+          padding: 30px 20px 20px 20px;
         }
         p {
           font-size: 14px;
-          padding-right: 175px;
+          // padding-right: 175px;
           line-height: 1.6em;
           color: #222;
           @media screen and (max-width: 768px) {
@@ -119,24 +119,25 @@
             margin-top: 15px;
           }
         }
-        &--logo {
-          right: -1px;
-          top: -1px;
-          padding: 8px 44px;
-          position: absolute;
-          border: 2px solid #e8e8e8;
-          background: #fff;
+        &_logo {
+          // right: -1px;
+          // top: -1px;
+          position: relative;
+          float: right;
           text-align: center;
+          margin-top: -40px;
+          margin-right: -22px;
+          margin-left: 10px;
           @media screen and (max-width: 1280px) {
             padding: 6px 20px;
+            margin-top: -46px;
+            margin-right: -42px;
           }
           @media screen and (max-width: 768px) {
             padding: 10px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 100px;
-            top: -28px;
+            width: 165px;
+            margin-top: -41px;
+            margin-right: -31px;
           }
           img {
             width: 100px;
@@ -145,6 +146,44 @@
             }
             @media screen and (max-width: 768px) {
               width: 60px;
+            }
+          }
+
+          &--img {
+            padding: 8px 44px;
+            background: #fbfbfe;
+            border: 2px solid #e8e8e8;
+          }
+
+          .socials {
+            display: inline-flex;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            &__item {
+              width: 30px;
+              height: 30px;
+              background: #2c256c;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 16px;
+              margin: 8px 4px 10px;
+              img {
+                transition: 0.1s;
+              }
+              &:hover {
+                img {
+                  transform: scale(1.08);
+                }
+              }
+
+              &:first-child img {
+                width: 17px;
+              }
+              &:last-child img {
+                width: 23px;
+                margin-top: 1px;
+              }
             }
           }
         }
