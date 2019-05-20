@@ -335,6 +335,10 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.2s;
+        pointer-events: none;
+      }
+      a {
+        display: block;
       }
       &:hover {
         .slick__item--img {
