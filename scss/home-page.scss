@@ -7,9 +7,8 @@
   overflow: hidden;
   .header-image {
     width: 54%;
-    background: url(../img/main-header-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background: url(../img/main-header-bg.jpg) no-repeat;
+
     height: calc(100% - 150px - 44px);
     @media screen and (max-width: 1024px) {
       width: 50%;
@@ -25,6 +24,16 @@
     }
     @media screen and (max-height: 640px) {
       height: calc(100% - 120px - 44px);
+    }
+    .main-slider {
+      height: 100%;
+        .slick-list, .slick-track {
+          height: 100%;
+        }
+        .slick-slide {
+          background-size: cover!important;
+          background-position: center!important;
+        }
     }
   }
 

@@ -143,9 +143,10 @@
 
         .path {
           animation: dash 30s linear infinite;
-          stroke-dasharray: 320;
-          stroke-dashoffset: 0;
-          stroke-width: 2; stroke-dasharray: 3, 8; stroke-linecap: round;
+          animation-delay: 0.5s;
+          stroke-width: 2; 
+          stroke-dasharray: 3, 8; 
+          stroke-linecap: round;
         }
       }
     }
