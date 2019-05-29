@@ -47,12 +47,18 @@
     }
     &-image {
       width: calc(45% - 5px);
+      @media screen and (max-width: 1440px) {
+        width: 40%;
+      }
       @media screen and (max-width: 768px) {
         width: 100%;
       }
       img {
         max-width: 83%;
         width: 100%;
+        @media screen and (max-width: 1440px) {
+          max-width: 90%;
+        }
         @media screen and (max-width: 768px) {
           max-width: 300px;
           margin: auto;
@@ -68,6 +74,9 @@
     }
     &-info {
       width: calc(55% + 5px);
+      @media screen and (max-width: 1440px) {
+        width: 59%;
+      }
       @media screen and (max-width: 768px) {
         width: 100%;
       }
@@ -76,7 +85,7 @@
         font-weight: 600;
         color: #313131;
          @media screen and (max-width: 1440px) {
-            font-size: 52px;
+            font-size: 50px;
          }
         @media screen and (max-width: 768px) {
           text-align: center;
@@ -134,8 +143,13 @@
           margin-top: -40px;
           margin-right: -22px;
           margin-left: 10px;
-          @media screen and (max-width: 1280px) {
+          @media screen and (max-width: 1440px) {
             padding: 6px 20px;
+            margin-top: -46px;
+            margin-right: -42px;
+          }
+          @media screen and (max-width: 1280px) {
+            padding: 5px 18px;
             margin-top: -46px;
             margin-right: -42px;
           }
@@ -148,8 +162,11 @@
           img {
             width: 100px;
             object-fit: contain;
-            @media screen and (max-width: 1280px) {
+            @media screen and (max-width: 1440px) {
               width: 80px;
+            }
+            @media screen and (max-width: 1280px) {
+              width: 70px;
             }
             @media screen and (max-width: 768px) {
               width: 60px;
@@ -172,6 +189,9 @@
           display: block;
           margin: 37px 0 35px;
           color: #2d2a6a;
+          @media screen and (max-width: 1440px) {
+            font-size: 20px;
+          }
           @media screen and (max-width: 768px) {
             font-size: 20px;
           }
@@ -245,6 +265,9 @@
       font-size: 24px;
       position: relative;
       margin: 0 0 25px 0;
+      @media screen and (max-width: 1440px) {
+        font-size: 22px;
+      }
       @media screen and (max-width: 768px) {
         font-size: 20px;
       }
