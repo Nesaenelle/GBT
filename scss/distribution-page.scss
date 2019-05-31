@@ -132,6 +132,11 @@
           fill: #fff;
           font: 600 13px "Raleway regular", sans-serif; 
         }
+        .city-text {
+          text-transform: uppercase;
+          font: 600 34px "Raleway regular", sans-serif; 
+          text-shadow: 1px 1px 3px #444;
+        }
         @keyframes dash {
           from {
             stroke-dashoffset: 320;

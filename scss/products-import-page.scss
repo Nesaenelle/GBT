@@ -15,6 +15,7 @@
     width: 100%;
     position: relative;
     padding-bottom: 100px;
+    background: #fcfcfc;
     @media screen and (max-width: 768px) {
       padding-bottom: 30px;
     }
@@ -47,6 +48,30 @@
     }
     &-image {
       width: calc(45% - 5px);
+      position: relative;
+      &__text {
+        position: absolute;
+        color: #f4f4fd;
+        font-size: 108px;
+        text-transform: uppercase;
+        font-weight: 600;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        left: 43px;
+        /* transform-origin: center; */
+        top: 0;
+        width: 100%;
+        white-space: nowrap;
+        height: 100%;
+        text-align: center;
+          @media screen and (max-width: 1440px) {
+            left: 120px;
+            font-size: 90px;
+          }
+        @media screen and (max-width: 1280px) {
+          display: none;
+        }
+      }
       @media screen and (max-width: 1440px) {
         width: 40%;
       }
@@ -113,21 +138,78 @@
       }
       &__descr {
         position: relative;
-        border: 1px solid #b3b2c9;
+        // border: 1px solid #e8e8e8;
         padding: 39px 21px 42px 30px;
         // background: #fbfbfe;
         margin-top: 24px;
+        &:after {
+            // content: "";
+            // border-bottom: 1px solid #e8e8e8;
+            // position: absolute;
+            // height: 126px;
+            // width: 271px;
+            // right: 0;
+            // -webkit-transform: rotate(-45deg);
+            // transform: rotate(28deg) translate(0px, 0%);
+            // -webkit-transform-origin: 0 0;
+            // transform-origin: 100% 100%;
+            // top: 0;
+            // background: #fcfcfc;
+        }
+        &_bg {
+              -webkit-clip-path: polygon(62% 0%, 0% 0%, 0% 100%,122% 100%);
+              background: #e8e8e8;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              @media screen and (max-width: 1440px) {
+                clip-path: polygon(70% 0,0 0,0 100%,135% 100%);
+              }
+    
+              @media screen and (max-width: 1280px) {
+                clip-path: polygon(58% 0%, 0% 0%, 0% 100%,135% 100%);
+              }
+              @media screen and (max-width: 480px) {
+                clip-path: polygon(58% 0%, 0% 0%, 0% 100%,155% 100%);
+              }
+              &:after {
+                content: "";
+                clip-path: polygon(62% 0,0 0,0 100%,122% 100%);
+                position: absolute;
+                top: 0;
+                width: calc(100% - 2px);
+                height: calc(100% - 2px);
+                background: #fcfcfc;
+                margin: auto;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                @media screen and (max-width: 1440px) {
+                  clip-path: polygon(70% 0,0 0,0 100%,135% 100%);
+                }
+                @media screen and (max-width: 1280px) {
+                  clip-path: polygon(58% 0%, 0% 0%, 0% 100%,135% 100%);
+                }
+                @media screen and (max-width: 480px) {
+                  clip-path: polygon(58% 0%, 0% 0%, 0% 100%,155% 100%);
+                }
+              }
+        }
         @media screen and (max-width: 768px) {
           margin-top: 40px;
           padding: 30px 20px 20px 20px;
         }
         p {
+          position: relative;
           font-size: 14px;
           // padding-right: 175px;
           line-height: 1.6em;
           color: #222;
+          padding-right: 35%;
           @media screen and (max-width: 768px) {
-            padding-right: 0;
+            padding-right: 15%;
           }
           & + p {
             padding-right: 0;
@@ -137,27 +219,35 @@
         &_logo {
           // right: -1px;
           // top: -1px;
+          top: -39px;
+          right: -21px;
           position: relative;
+          // right: 0;
+          // top: 0;
           float: right;
           text-align: center;
-          margin-top: -40px;
-          margin-right: -22px;
-          margin-left: 10px;
+          // margin-top: -40px;
+          // margin-right: -22px;
+          // margin-left: 10px;
+          // margin-bottom: 20px;
+          z-index: 1;
           @media screen and (max-width: 1440px) {
-            padding: 6px 20px;
-            margin-top: -46px;
-            margin-right: -42px;
+            // padding: 6px 20px;
+            // margin-top: -46px;
+            // margin-right: -42px;
           }
           @media screen and (max-width: 1280px) {
-            padding: 5px 18px;
-            margin-top: -46px;
-            margin-right: -42px;
+            // padding: 5px 18px;
+            // margin-top: -46px;
+            // margin-right: -42px;
           }
           @media screen and (max-width: 768px) {
-            padding: 10px;
+            // padding: 10px;
             width: 165px;
-            margin-top: -41px;
-            margin-right: -31px;
+            // margin-top: -41px;
+            // margin-right: -31px;/
+            top: -30px;
+            right: -20px;
           }
           img {
             width: 100px;
@@ -175,8 +265,9 @@
 
           &--img {
             padding: 8px 44px;
-            background: #fbfbfe;
-            border: 2px solid #e8e8e8;
+            background: #fff;
+            // border: 2px solid #e8e8e8;
+            box-shadow: 0 0 7px -2px #ccc;
           }
         }
       }
@@ -284,7 +375,7 @@
       }
       span {
         position: relative;
-        background: #fff;
+        background: #fcfcfc;
         padding: 0 24px;
         z-index: 1;
       }
@@ -317,10 +408,13 @@
         transition: 0.2s;
       }
       &--img {
-        width: 72px;
+        width: 140px;
         transition: 0.2s;
         margin: auto;
         display: block;
+        @media screen and (max-width: 768px) {
+          width: 100px;
+        }
       }
       &--info {
         // margin-top: 21px;
@@ -375,7 +469,8 @@
     outline: none;
     transition: 0.1s;
     // bottom: 34px;
-    top: 35px;
+    top: 0;
+    bottom: 0;
     margin: auto;
     display: flex;
     justify-content: center;
