@@ -5,7 +5,7 @@
   justify-content: center;
   .top-panel {
     background: url(../img/distblue.jpg);
-    padding: 46px 0 47px;
+    padding: 20px 0 20px;
   }
   .bottom-panel {
     margin-top: 0;
@@ -157,7 +157,7 @@
             // background: #fcfcfc;
         }
         &_bg {
-              -webkit-clip-path: polygon(62% 0%, 0% 0%, 0% 100%,122% 100%);
+              clip-path: polygon(62% 0%, 0% 0%, 0% 100%,138% 100%);
               background: #e8e8e8;
               position: absolute;
               left: 0;
@@ -169,14 +169,14 @@
               }
     
               @media screen and (max-width: 1280px) {
-                clip-path: polygon(58% 0%, 0% 0%, 0% 100%,135% 100%);
+                clip-path: polygon(65% 0%, 0% 0%, 0% 100%,135% 100%);
               }
               @media screen and (max-width: 480px) {
                 clip-path: polygon(58% 0%, 0% 0%, 0% 100%,155% 100%);
               }
               &:after {
                 content: "";
-                clip-path: polygon(62% 0,0 0,0 100%,122% 100%);
+                clip-path: polygon(62% 0,0 0,0 100%,138% 100%);
                 position: absolute;
                 top: 0;
                 width: calc(100% - 2px);
@@ -190,7 +190,7 @@
                   clip-path: polygon(70% 0,0 0,0 100%,135% 100%);
                 }
                 @media screen and (max-width: 1280px) {
-                  clip-path: polygon(58% 0%, 0% 0%, 0% 100%,135% 100%);
+                  clip-path: polygon(65% 0%, 0% 0%, 0% 100%,135% 100%);
                 }
                 @media screen and (max-width: 480px) {
                   clip-path: polygon(58% 0%, 0% 0%, 0% 100%,155% 100%);
@@ -392,7 +392,7 @@
       position: relative;
       &:hover {
         .slick__item--img {
-          transform: scale(1.25);
+          transform: scale(1.15);
         }
       }
       &:after {
